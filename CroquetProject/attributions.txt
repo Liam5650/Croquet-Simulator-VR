@@ -1,0 +1,20 @@
+Liam Iles and Tyson Moll have completed this project in collaboration.
+
+//	Textures by Poly Haven Staff licenced under CC0
+//	https://polyhaven.com/textures
+//	https://polyhaven.com/license
+
+
+----- Assets -----
+
+[missing attr. for RPGPP_LT]
+[missing attr. for TextMesh Pro]
+
+Quick Outline by Chris Nolet under Standard Unity Asset Store EULA
+https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488
+https://unity3d.com/legal/as_terms
+
+----- Models -----
+
+Croquet Models by Tyson Moll 
+(original creation, unlicensed)
