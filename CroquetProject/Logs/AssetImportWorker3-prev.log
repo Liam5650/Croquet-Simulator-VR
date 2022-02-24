@@ -9,11 +9,11 @@ C:\Program Files\Unity\Hub\Editor\2021.2.12f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker2
+AssetImportWorker3
 -projectPath
 C:/Users/Liam/Documents/GitHub/CPS643-Project/CroquetProject
 -logFile
-Logs/AssetImportWorker2.log
+Logs/AssetImportWorker3.log
 -srvPort
 50010
 Successfully changed project path to: C:/Users/Liam/Documents/GitHub/CPS643-Project/CroquetProject
@@ -47,7 +47,7 @@ C:/Users/Liam/Documents/GitHub/CPS643-Project/CroquetProject
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 47.43 ms, found 10 plugins.
+Refreshing native plugins compatible for Editor in 47.95 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.12f1 (48b1aa000234)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/Resources/UnitySubsystems
@@ -63,13 +63,13 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56852
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002189 seconds.
+Registered in 0.002180 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 43.33 ms, found 10 plugins.
+Refreshing native plugins compatible for Editor in 44.62 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.340 seconds
@@ -84,30 +84,30 @@ Domain Reload Profiling:
 		EndReloadAssembly (248ms)
 			LoadAssemblies (33ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (56ms)
+			SetupTypeCache (53ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (13ms)
-			SetupLoadedEditorAssemblies (150ms)
+			RebuildScriptCaches (14ms)
+			SetupLoadedEditorAssemblies (153ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (43ms)
+				RefreshPlugins (45ms)
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (78ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006631 seconds.
+Registered in 0.007111 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 47.17 ms, found 10 plugins.
+Refreshing native plugins compatible for Editor in 44.32 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
-[Package Manager] Server::Start -- Port 50077 was selected
+[Package Manager] Server::Start -- Port 50087 was selected
 [Package Manager] Cannot connect to Unity Package Manager local server
 [Package Manager] Cannot connect to Unity Package Manager local server
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentNullException: Value cannot be null.
@@ -129,28 +129,28 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.091 seconds
+- Completed reload, in  1.090 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1091ms)
-		BeginReloadAssembly (54ms)
+		BeginReloadAssembly (56ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (10ms)
-		EndReloadAssembly (973ms)
-			LoadAssemblies (42ms)
+		EndReloadAssembly (968ms)
+			LoadAssemblies (46ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (131ms)
+			SetupTypeCache (133ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (728ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (718ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (47ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (302ms)
+				RefreshPlugins (44ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (298ms)
 				ProcessInitializeOnLoadMethodAttributes (311ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
@@ -160,12 +160,12 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.66 ms, found 10 plugins.
+Refreshing native plugins compatible for Editor in 0.97 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4842 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 67 unused Assets / (0.7 MB). Loaded Objects now: 5270.
 Memory consumption went from 208.5 MB to 207.8 MB.
-Total: 2.700100 ms (FindLiveObjects: 0.191500 ms CreateObjectMapping: 0.107400 ms MarkObjects: 2.184800 ms  DeleteObjects: 0.215600 ms)
+Total: 4.023100 ms (FindLiveObjects: 0.457700 ms CreateObjectMapping: 0.163500 ms MarkObjects: 3.204900 ms  DeleteObjects: 0.195600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -179,71 +179,53 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1834.678140 seconds.
-  path: Assets/Materials/Colors/Black.mat
-  artifactKey: Guid(f47574858ac1e614fbf748f81a0a132e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Colors/Black.mat using Guid(f47574858ac1e614fbf748f81a0a132e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a39c78789f5488178635a465e9c4c62f') in 0.155679 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.901035 seconds.
-  path: Assets/Models/Controls/rotaryControl_b.fbx
-  artifactKey: Guid(58bd21cd8c2616348bc540846a3edf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Controls/rotaryControl_b.fbx using Guid(58bd21cd8c2616348bc540846a3edf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f553537dfd8cc0201568794012ac593') in 0.867862 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.503387 seconds.
-  path: Assets/Models/Croquet/croquetBall_regulation.fbx
-  artifactKey: Guid(f8fd81b5bd1c25b4d9f651985c7943cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Croquet/croquetBall_regulation.fbx using Guid(f8fd81b5bd1c25b4d9f651985c7943cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de4fe3901d88d3574317e58dcae02eb') in 0.051299 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.044588 seconds.
-  path: Assets/Template/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Template/UniversalRenderPipelineGlobalSettings.asset using Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92801cae1a897d946050a0dfa8d20fcb') in 0.005242 seconds 
+  Time since last request: 1858.116702 seconds.
+  path: Assets/Models/Croquet/peg.fbx
+  artifactKey: Guid(575bb48cda9006f439e9a733fb268cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Croquet/peg.fbx using Guid(575bb48cda9006f439e9a733fb268cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49c3c366ff07580df600b12529b62027') in 0.969094 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008007 seconds.
+Registered in 0.007958 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 10 plugins.
+Refreshing native plugins compatible for Editor in 0.68 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.781 seconds
+- Completed reload, in  1.783 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1782ms)
+	ReloadAssembly (1783ms)
 		BeginReloadAssembly (92ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1632ms)
-			LoadAssemblies (49ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (1637ms)
+			LoadAssemblies (48ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (145ms)
+			SetupTypeCache (141ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (22ms)
-			SetupLoadedEditorAssemblies (1366ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (1368ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (44ms)
-				ProcessInitializeOnLoadAttributes (218ms)
-				ProcessInitializeOnLoadMethodAttributes (1092ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (1085ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.84 ms, found 10 plugins.
+Refreshing native plugins compatible for Editor in 3.45 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4692 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 57 unused Assets / (0.7 MB). Loaded Objects now: 5366.
-Memory consumption went from 206.4 MB to 205.8 MB.
-Total: 2.832300 ms (FindLiveObjects: 0.209300 ms CreateObjectMapping: 0.114200 ms MarkObjects: 2.288500 ms  DeleteObjects: 0.219700 ms)
+Memory consumption went from 206.3 MB to 205.7 MB.
+Total: 2.593700 ms (FindLiveObjects: 0.198600 ms CreateObjectMapping: 0.098000 ms MarkObjects: 2.124100 ms  DeleteObjects: 0.172600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -255,3 +237,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
