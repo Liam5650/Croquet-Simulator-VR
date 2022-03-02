@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.2/staging' branch; Version is '2021.2.12f1 (48b1aa000234) revision 4764074'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'en' Physical Memory: 32581 MB
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 32682 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.2.12f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/Liam/Documents/GitHub/CPS643-Project/CroquetProject
+C:/Users/Tyson/Documents/Git_Fork/CPS643-Project/CroquetProject
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63656
-Successfully changed project path to: C:/Users/Liam/Documents/GitHub/CPS643-Project/CroquetProject
-C:/Users/Liam/Documents/GitHub/CPS643-Project/CroquetProject
+59393
+Successfully changed project path to: C:/Users/Tyson/Documents/Git_Fork/CPS643-Project/CroquetProject
+C:/Users/Tyson/Documents/Git_Fork/CPS643-Project/CroquetProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,67 +47,76 @@ C:/Users/Liam/Documents/GitHub/CPS643-Project/CroquetProject
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 53.58 ms, found 10 plugins.
+Refreshing native plugins compatible for Editor in 92.02 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.12f1 (48b1aa000234)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Liam/Documents/GitHub/CPS643-Project/CroquetProject/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Tyson/Documents/Git_Fork/CPS643-Project/CroquetProject/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3090 (ID=0x2204)
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
     Vendor:   NVIDIA
-    VRAM:     24348 MB
-    Driver:   30.0.15.1165
+    VRAM:     2988 MB
+    Driver:   30.0.15.1123
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56576
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001976 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.010821 seconds.
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 49.04 ms, found 10 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 77.31 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.381 seconds
+- Completed reload, in  0.639 seconds
 Domain Reload Profiling:
-	ReloadAssembly (381ms)
-		BeginReloadAssembly (40ms)
+	ReloadAssembly (640ms)
+		BeginReloadAssembly (69ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (277ms)
-			LoadAssemblies (38ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (455ms)
+			LoadAssemblies (67ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (60ms)
+			SetupTypeCache (101ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (14ms)
-			SetupLoadedEditorAssemblies (173ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (275ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (16ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (49ms)
+				RefreshPlugins (77ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (90ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
+				ProcessInitializeOnLoadAttributes (138ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007914 seconds.
+Registered in 0.019246 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 46.68 ms, found 10 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 77.47 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
-[Package Manager] Server::Start -- Port 64094 was selected
+[Package Manager] Server::Start -- Port 49849 was selected
 [Package Manager] Cannot connect to Unity Package Manager local server
 [Package Manager] Cannot connect to Unity Package Manager local server
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentNullException: Value cannot be null.
@@ -129,49 +138,50 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.348 seconds
+- Completed reload, in  2.124 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1349ms)
-		BeginReloadAssembly (62ms)
+	ReloadAssembly (2125ms)
+		BeginReloadAssembly (106ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (12ms)
-		EndReloadAssembly (1215ms)
-			LoadAssemblies (49ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1893ms)
+			LoadAssemblies (97ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (161ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (922ms)
+			SetupTypeCache (246ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (1423ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (2ms)
+				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (47ms)
-				BeforeProcessingInitializeOnLoad (61ms)
-				ProcessInitializeOnLoadAttributes (487ms)
-				ProcessInitializeOnLoadMethodAttributes (322ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				RefreshPlugins (78ms)
+				BeforeProcessingInitializeOnLoad (133ms)
+				ProcessInitializeOnLoadAttributes (836ms)
+				ProcessInitializeOnLoadMethodAttributes (354ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.40 ms, found 10 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4842 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 67 unused Assets / (0.7 MB). Loaded Objects now: 5271.
-Memory consumption went from 204.8 MB to 204.1 MB.
-Total: 8.230800 ms (FindLiveObjects: 0.366800 ms CreateObjectMapping: 0.298800 ms MarkObjects: 7.176400 ms  DeleteObjects: 0.386500 ms)
+Unloading 67 unused Assets / (0.7 MB). Loaded Objects now: 5270.
+Memory consumption went from 202.6 MB to 201.9 MB.
+Total: 6.527400 ms (FindLiveObjects: 0.528000 ms CreateObjectMapping: 0.442800 ms MarkObjects: 5.052100 ms  DeleteObjects: 0.503000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -179,274 +189,22 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 101662.591710 seconds.
-  path: Packages/io.extendreality.tilia.camerarigs.spatialsimulator.unity/Runtime/SharedResources/NestedPrefabs/CameraRigs.SpatialSimulator.ObjectController.prefab
-  artifactKey: Guid(2bfd973cbb1ea4446b730a74e00aee86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/io.extendreality.tilia.camerarigs.spatialsimulator.unity/Runtime/SharedResources/NestedPrefabs/CameraRigs.SpatialSimulator.ObjectController.prefab using Guid(2bfd973cbb1ea4446b730a74e00aee86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0e39fe7a2e2883002e4508ffca8d063') in 0.147302 seconds 
+  Time since last request: 924856.208245 seconds.
+  path: Assets/Models/Controls/toggle.fbx
+  artifactKey: Guid(60d375333d12e514d8cc5bdc35265a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Controls/toggle.fbx using Guid(60d375333d12e514d8cc5bdc35265a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ec612c670aeec77ff1fe3b073defc39') in 0.605614 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIFoldout.prefab
-  artifactKey: Guid(1c87ab2ce8b8b304d98fbe9a734b1f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIFoldout.prefab using Guid(1c87ab2ce8b8b304d98fbe9a734b1f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6df02b41e96db2f8ae4b512494d4dddc') in 0.051108 seconds 
+  Time since last request: 2.623695 seconds.
+  path: Assets/Models/Croquet/croquetBall_regulation.fbx
+  artifactKey: Guid(f8fd81b5bd1c25b4d9f651985c7943cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Croquet/croquetBall_regulation.fbx using Guid(f8fd81b5bd1c25b4d9f651985c7943cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '697f7255e07f9d01117512eebbe23aca') in 0.085305 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIFloatField.prefab
-  artifactKey: Guid(d8c744701b43c864b88e7f8144e19bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIFloatField.prefab using Guid(d8c744701b43c864b88e7f8144e19bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ef0943f4b33bfb98626ae0bf4372d18') in 0.018445 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIColor.prefab
-  artifactKey: Guid(77c185820dd1a464eac89cae3abccddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIColor.prefab using Guid(77c185820dd1a464eac89cae3abccddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b675892bb18ba805089a433ef9c1d067') in 0.017097 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIButton.prefab
-  artifactKey: Guid(f6ce33b91f6ffe54cadacbf4bb112440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIButton.prefab using Guid(f6ce33b91f6ffe54cadacbf4bb112440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70efa85b2e457ad0c7d7276ac3b33396') in 0.026224 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIEnumField.prefab
-  artifactKey: Guid(988db55689193434fb0b3b89538f978f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIEnumField.prefab using Guid(988db55689193434fb0b3b89538f978f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c37b163c5cfe74dd72a37e7235d6603') in 0.020965 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Packages/com.unity.render-pipelines.core/Editor/Resources/DebugProbe.fbx
-  artifactKey: Guid(9e1c97fc44f9a8744b61b58f72c56de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Editor/Resources/DebugProbe.fbx using Guid(9e1c97fc44f9a8744b61b58f72c56de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad854cf11dacfeb54cbfad50cb0247f2') in 0.599789 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.094122 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIMessageBox.prefab
-  artifactKey: Guid(10a25524b0986f9488b430e2829bbbe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIMessageBox.prefab using Guid(10a25524b0986f9488b430e2829bbbe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d11a7894c96802a0c48484a0b15022d') in 0.030229 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIToggle.prefab
-  artifactKey: Guid(ce347ad101f41ee4ab5c3fbc0ea447db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIToggle.prefab using Guid(ce347ad101f41ee4ab5c3fbc0ea447db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63af5a2d4d31e6b699f2ce36033a3652') in 0.022199 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.060862 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIVector3.prefab
-  artifactKey: Guid(94afea5f242d72547979595ba963f335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIVector3.prefab using Guid(94afea5f242d72547979595ba963f335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4585fc03c3c9377af1dd4b49dd580c07') in 0.019773 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.792700 seconds.
-  path: Packages/io.extendreality.tilia.indicators.objectpointers.unity/Runtime/Prefabs/Indicators.ObjectPointers.Straight.prefab
-  artifactKey: Guid(1950b2150beec924d9cff768bb4e815c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/io.extendreality.tilia.indicators.objectpointers.unity/Runtime/Prefabs/Indicators.ObjectPointers.Straight.prefab using Guid(1950b2150beec924d9cff768bb4e815c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2897151dec69b6cffbb4cebb07b1f06') in 0.036604 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.036945 seconds.
-  path: Packages/io.extendreality.tilia.input.combinedactions.unity/Runtime/Prefabs/Input.CombinedActions.DoubleClickAction.prefab
-  artifactKey: Guid(c7d2994c7404d4e40b9bc5db394a82d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/io.extendreality.tilia.input.combinedactions.unity/Runtime/Prefabs/Input.CombinedActions.DoubleClickAction.prefab using Guid(c7d2994c7404d4e40b9bc5db394a82d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c3faa7d7a988812c1479372c99ab713') in 0.009440 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.183742 seconds.
-  path: Packages/io.extendreality.tilia.input.unityinputmanager/Runtime/Prefabs/ControllerMappings/Input.UnityInputManager.XboxController.prefab
-  artifactKey: Guid(f17aeb095126142428c35268b3b4870b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/io.extendreality.tilia.input.unityinputmanager/Runtime/Prefabs/ControllerMappings/Input.UnityInputManager.XboxController.prefab using Guid(f17aeb095126142428c35268b3b4870b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6264091d6fd5008f5d70bf8c5724bac9') in 0.011906 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.047972 seconds.
-  path: Packages/io.extendreality.tilia.interactions.interactables.unity/Runtime/Interactables/SharedResources/NestedPrefabs/GrabActions/Interactable.GrabAction.Scale.prefab
-  artifactKey: Guid(cdc2cc72af5e4b44194f8fd19e6a2def) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/io.extendreality.tilia.interactions.interactables.unity/Runtime/Interactables/SharedResources/NestedPrefabs/GrabActions/Interactable.GrabAction.Scale.prefab using Guid(cdc2cc72af5e4b44194f8fd19e6a2def) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c781cc815ede736cce5c61768b25f002') in 0.009783 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.672103 seconds.
-  path: Packages/io.extendreality.tilia.interactions.interactables.unity/Runtime/Interactors/SharedResources/NestedPrefabs/Interaction.Touching.prefab
-  artifactKey: Guid(734c79b0fd2a7ec46932982b9fa8b279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/io.extendreality.tilia.interactions.interactables.unity/Runtime/Interactors/SharedResources/NestedPrefabs/Interaction.Touching.prefab using Guid(734c79b0fd2a7ec46932982b9fa8b279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b38d9dec3a1bc482be354c82e8a9ed6f') in 0.012326 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.998299 seconds.
-  path: Packages/io.extendreality.tilia.interactions.controllables.unity/Runtime/Prefabs/PhysicsJoint/Interactions.LinearJointDrive.prefab
-  artifactKey: Guid(fe37ed9670a759f4982047abcdc2f0eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/io.extendreality.tilia.interactions.controllables.unity/Runtime/Prefabs/PhysicsJoint/Interactions.LinearJointDrive.prefab using Guid(fe37ed9670a759f4982047abcdc2f0eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae683745c02169932cba58026121889a') in 0.062073 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Packages/io.extendreality.tilia.interactions.spatialbuttons.unity/Runtime/Prefabs/Interactions.SpatialButton.ToggleButton.prefab
-  artifactKey: Guid(e55268ed62b3318439d327afd35d94d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/io.extendreality.tilia.interactions.spatialbuttons.unity/Runtime/Prefabs/Interactions.SpatialButton.ToggleButton.prefab using Guid(e55268ed62b3318439d327afd35d94d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1536bb52bc4e587e0a8eae78ecce66fd') in 0.131097 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.490720 seconds.
-  path: Packages/io.extendreality.tilia.indicators.objectpointers.unity/Runtime/SharedResources/NestedPrefabs/ObjectPointer.Internal.prefab
-  artifactKey: Guid(b5bcf67f1f80d1a4f800327247af655a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/io.extendreality.tilia.indicators.objectpointers.unity/Runtime/SharedResources/NestedPrefabs/ObjectPointer.Internal.prefab using Guid(b5bcf67f1f80d1a4f800327247af655a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fcd0a80ea329c9700b2d39af561d97c') in 0.013429 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.894336 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Prefabs/Props/Wall_decor/Banners/rpgpp_lt_banner_01b.prefab
-  artifactKey: Guid(002f7a569314a244fb643e8ea8d00376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Prefabs/Props/Wall_decor/Banners/rpgpp_lt_banner_01b.prefab using Guid(002f7a569314a244fb643e8ea8d00376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43b3cbef48af500c78b56d0536c929a0') in 0.012994 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Models/Props/rpgpp_lt_bathtub_wood_01.fbx
-  artifactKey: Guid(1a8449922d22bae4791e0335226fa1aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Models/Props/rpgpp_lt_bathtub_wood_01.fbx using Guid(1a8449922d22bae4791e0335226fa1aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff64dc340ef41c1a46dc7127f462514') in 0.020427 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003488 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Models/Props/rpgpp_lt_bird_house_01.fbx
-  artifactKey: Guid(8edf1a08abb5cb342a2a608b289c1f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Models/Props/rpgpp_lt_bird_house_01.fbx using Guid(8edf1a08abb5cb342a2a608b289c1f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2d30d13e69dbb8ea928ba8dcfe00d31') in 0.021865 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.028359 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Prefabs/Props/Containers/rpgpp_lt_bucket_01.prefab
-  artifactKey: Guid(05723fa5edef5fa4ab72eb90ae0bf7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Prefabs/Props/Containers/rpgpp_lt_bucket_01.prefab using Guid(05723fa5edef5fa4ab72eb90ae0bf7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12ad698d0e37542634d5fb53f1187c50') in 0.013467 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Models/Structures/rpgpp_lt_building_02.fbx
-  artifactKey: Guid(3ad660daf3a1e02458b9f3eca418861a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Models/Structures/rpgpp_lt_building_02.fbx using Guid(3ad660daf3a1e02458b9f3eca418861a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c73b4a1ceb678f101d609f8c0688beb3') in 0.034761 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.113668 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Prefabs/Structures/Buildings/Bld_closed/rpgpp_lt_building_04.prefab
-  artifactKey: Guid(71442e8cd72511e4fabb72f1a2cc82dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Prefabs/Structures/Buildings/Bld_closed/rpgpp_lt_building_04.prefab using Guid(71442e8cd72511e4fabb72f1a2cc82dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49c44e956d9e55961acddd0b3f4bd6aa') in 0.022313 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.465390 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Models/Props/rpgpp_lt_chair_01a.fbx
-  artifactKey: Guid(c7acbad2649a15647a7a4dfd8cceb5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Models/Props/rpgpp_lt_chair_01a.fbx using Guid(c7acbad2649a15647a7a4dfd8cceb5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dc3f1f825bb6773234c84409174c0ca') in 0.020481 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Models/Nature/rpgpp_lt_flower_02.fbx
-  artifactKey: Guid(7710c12951e94d24eb1b65f105f6823e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Models/Nature/rpgpp_lt_flower_02.fbx using Guid(7710c12951e94d24eb1b65f105f6823e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7597024301321ad04f7ca905eb51544b') in 0.021871 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.027167 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Vegetation/Grass/rpgpp_lt_grass_small_01a.prefab
-  artifactKey: Guid(00e2e59cbc04eab4a982218df54ce70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Vegetation/Grass/rpgpp_lt_grass_small_01a.prefab using Guid(00e2e59cbc04eab4a982218df54ce70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c533a8e591147ad7cf8a77b6a77a9b21') in 0.016829 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Prefabs/Props/Furniture/Hangers/rpgpp_lt_hanger_clothes_01.prefab
-  artifactKey: Guid(9e6377f4cae22eb4194f71c6e76c37b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Prefabs/Props/Furniture/Hangers/rpgpp_lt_hanger_clothes_01.prefab using Guid(9e6377f4cae22eb4194f71c6e76c37b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0542dc8e19702a89a031c51614c7bf7') in 0.014297 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.498001 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Terrain/rpgpp_lt_hill_small_01.prefab
-  artifactKey: Guid(5c9211eb71cff4f4996a21d92317f601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Terrain/rpgpp_lt_hill_small_01.prefab using Guid(5c9211eb71cff4f4996a21d92317f601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '731c9eaf372d971cf3a8e6a612c4ba99') in 0.014272 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Terrain/rpgpp_lt_hill_small_02.prefab
-  artifactKey: Guid(6dcae7204dd466c4c862bc640ea7c02e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Terrain/rpgpp_lt_hill_small_02.prefab using Guid(6dcae7204dd466c4c862bc640ea7c02e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56025b0e42017ec5d39fd57b79fb85c2') in 0.014410 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.012181 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Prefabs/Props/Wood/rpgpp_lt_log_wood_01.prefab
-  artifactKey: Guid(bbb972e8372282f4093c9484693385fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Prefabs/Props/Wood/rpgpp_lt_log_wood_01.prefab using Guid(bbb972e8372282f4093c9484693385fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '209d52884bb88a744b7cb2e4f2c9f74f') in 0.015093 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Vegetation/Plants/rpgpp_lt_plant_01.prefab
-  artifactKey: Guid(5286e490afadac545ae3a1595b1e96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Vegetation/Plants/rpgpp_lt_plant_01.prefab using Guid(5286e490afadac545ae3a1595b1e96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a64f53c74e244e75898d9602eba9b3') in 0.023371 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Models/Nature/rpgpp_lt_plant_01.fbx
-  artifactKey: Guid(82188904581423c4a9ed3fbf3286ccdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Models/Nature/rpgpp_lt_plant_01.fbx using Guid(82188904581423c4a9ed3fbf3286ccdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c893e35c7becf6372c698e774f4d11') in 0.018711 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Rocks/rpgpp_lt_rock_03.prefab
-  artifactKey: Guid(0fd5be61d8c00de419d45d6bf745a69c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Rocks/rpgpp_lt_rock_03.prefab using Guid(0fd5be61d8c00de419d45d6bf745a69c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da2dacb959e8b618d18a66c58574f840') in 0.016301 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Models/Nature/rpgpp_lt_rock_small_01.fbx
-  artifactKey: Guid(274fdec0feeaa784f96a62f99c4be287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Models/Nature/rpgpp_lt_rock_small_01.fbx using Guid(274fdec0feeaa784f96a62f99c4be287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8cdb7d1f9cca50a82c6a197d24c55e9') in 0.016514 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.662332 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Models/Props/rpgpp_lt_sack_open_01.fbx
-  artifactKey: Guid(1716e599fb056014ca8f5786b3a82fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Models/Props/rpgpp_lt_sack_open_01.fbx using Guid(1716e599fb056014ca8f5786b3a82fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd6487c51da5d6f42578ab4eb16750f2') in 0.015626 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Sky/rpgpp_lt_sky_01.prefab
-  artifactKey: Guid(f31c6bb6e68212e41b0bcae74612a240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Sky/rpgpp_lt_sky_01.prefab using Guid(f31c6bb6e68212e41b0bcae74612a240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355ad1bbf15fe6bbee6f03bbb2e84e98') in 0.012567 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Models/Props/rpgpp_lt_shield_wall_01a.fbx
-  artifactKey: Guid(6db1e633533718d49bd0b8329bc37412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Models/Props/rpgpp_lt_shield_wall_01a.fbx using Guid(6db1e633533718d49bd0b8329bc37412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f22e6d809ff23ad0f4bd1d756a70806a') in 0.015924 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.009017 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Terrain/rpgpp_lt_terrain_path_01b.prefab
-  artifactKey: Guid(63ce2b31e16acab4d8a41f884c36333c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Terrain/rpgpp_lt_terrain_path_01b.prefab using Guid(63ce2b31e16acab4d8a41f884c36333c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d4280cd079609c56632890139e73e5') in 0.015305 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Terrain/rpgpp_lt_terrain_sand_01.prefab
-  artifactKey: Guid(e7489574cca6d4645a7019414b8288e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Prefabs/Nature/Terrain/rpgpp_lt_terrain_sand_01.prefab using Guid(e7489574cca6d4645a7019414b8288e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f76ba89938939adaed3fd90598539716') in 0.012182 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.672331 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Models/Nature/rpgpp_lt_tree_pine_01.fbx
-  artifactKey: Guid(58c79ebc04f48c74fa4869c3f7d941fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Models/Nature/rpgpp_lt_tree_pine_01.fbx using Guid(58c79ebc04f48c74fa4869c3f7d941fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32b6a059ce4ca5bf50b2a9ec40474662') in 0.016283 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.018420 seconds.
-  path: Assets/ExternalAssets/RPGPP_LT/Models/Props/rpgpp_lt_wagon_01.fbx
-  artifactKey: Guid(f34a4e9b86005de4da2625205407868e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/RPGPP_LT/Models/Props/rpgpp_lt_wagon_01.fbx using Guid(f34a4e9b86005de4da2625205407868e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a870d711484727009331bd80c48d3950') in 0.017580 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Packages/io.extendreality.tilia.developertools.unity/Runtime/Prefabs/SceneConsole/SceneConsole.prefab
-  artifactKey: Guid(d7069624331d0864dbd43c9602cb7d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/io.extendreality.tilia.developertools.unity/Runtime/Prefabs/SceneConsole/SceneConsole.prefab using Guid(d7069624331d0864dbd43c9602cb7d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cdbca698141eb0beaace64ea85718f2') in 0.011559 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Packages/io.extendreality.tilia.trackers.colliderfollower.unity/Runtime/Prefabs/Trackers.ColliderFollower.prefab
-  artifactKey: Guid(a8ac9b37a635c2f41bb96ce4c8c10fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/io.extendreality.tilia.trackers.colliderfollower.unity/Runtime/Prefabs/Trackers.ColliderFollower.prefab using Guid(a8ac9b37a635c2f41bb96ce4c8c10fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3ec44736d8897d4c66f0b7bbb5d4250') in 0.008127 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.556219 seconds.
-  path: Packages/io.extendreality.tilia.utilities.objectstateswitcher.unity/Runtime/Prefabs/Utilities.ObjectStateSwitcher.prefab
-  artifactKey: Guid(71946c5378b851146ab83dfd31fd6060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/io.extendreality.tilia.utilities.objectstateswitcher.unity/Runtime/Prefabs/Utilities.ObjectStateSwitcher.prefab using Guid(71946c5378b851146ab83dfd31fd6060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '285e57195e30cb189d36469a5cfed0a9') in 0.011946 seconds 
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/Croquet/peg.fbx
+  artifactKey: Guid(575bb48cda9006f439e9a733fb268cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Croquet/peg.fbx using Guid(575bb48cda9006f439e9a733fb268cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85c55a0e41e1a50763e51611b148002c') in 0.106435 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
