@@ -1607,3 +1607,85 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4157.391749 seconds.
+  path: Assets/XR/SteamVR/InteractionSystem/Longbow/Textures/BalloonColor.tga
+  artifactKey: Guid(616519d6531cad84cbd01281cc9742e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR/SteamVR/InteractionSystem/Longbow/Textures/BalloonColor.tga using Guid(616519d6531cad84cbd01281cc9742e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dbf38c95a97e54d1b4ba262b2cecbb9') in 0.082154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ExternalAssets/RPGPP_LT/Textures/rpgpp_lt_sky_a.tga
+  artifactKey: Guid(5c4fa0e44769f8f46a06d96031e56a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/RPGPP_LT/Textures/rpgpp_lt_sky_a.tga using Guid(5c4fa0e44769f8f46a06d96031e56a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42ba88fd06a2dbdd3dc69fc89fc3caa') in 0.013882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ExternalAssets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99eef3a2198f8258e64b67e2c555dcb5') in 0.200747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.778614 seconds.
+  path: Assets/Materials/Colors/Green.mat
+  artifactKey: Guid(fe10864a1e7c0b3459af03f38310ff50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Colors/Green.mat using Guid(fe10864a1e7c0b3459af03f38310ff50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab33a0f924d0676cd83010bf27d726d9') in 0.056244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.022231 seconds.
+  path: Assets/Materials/Basic/LaserMiss.mat
+  artifactKey: Guid(d4ba8e88a6994f34eb11836bcc34c9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Basic/LaserMiss.mat using Guid(d4ba8e88a6994f34eb11836bcc34c9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd600cd0e55af826be83e384a9f3a343a') in 0.071054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ExternalAssets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af674fd8a699a27bd4f2fae47dd8171d') in 0.089299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Packages/io.extendreality.tilia.camerarigs.spatialsimulator.unity/Runtime/SharedResources/Materials/LeftController.mat
+  artifactKey: Guid(76ddec75f2cf8234683ef59731618c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/io.extendreality.tilia.camerarigs.spatialsimulator.unity/Runtime/SharedResources/Materials/LeftController.mat using Guid(76ddec75f2cf8234683ef59731618c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf181d514c6074bd3e29e9a1dc7ee84') in 0.015970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ExternalAssets/QuickOutline/Resources/Materials/OutlineMask.mat
+  artifactKey: Guid(106f3ff43a17d4967a2b64c7a92e49ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/QuickOutline/Resources/Materials/OutlineMask.mat using Guid(106f3ff43a17d4967a2b64c7a92e49ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c128877254df3a2c72229002d947ae97') in 0.058969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Materials/Colors/Orange.mat
+  artifactKey: Guid(d815e5d17a864c64a9247e8a19610a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Colors/Orange.mat using Guid(d815e5d17a864c64a9247e8a19610a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '719de75304ba1ff115913fc091f41700') in 0.018742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Materials/Basic/HighlightMiss.mat
+  artifactKey: Guid(8ae8345737606cc4b9c5f9d89e69aa22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Basic/HighlightMiss.mat using Guid(8ae8345737606cc4b9c5f9d89e69aa22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bf8f0a22b0f37a4313ddc72d7b71560') in 0.021060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Packages/io.extendreality.tilia.indicators.spatialtargets.unity/Runtime/SharedResources/Materials/Hovered.mat
+  artifactKey: Guid(5352e738bd087e944a5630e211b24e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/io.extendreality.tilia.indicators.spatialtargets.unity/Runtime/SharedResources/Materials/Hovered.mat using Guid(5352e738bd087e944a5630e211b24e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e8c59d4ddb31aa8f746698ee6d80aec') in 0.021200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/ExternalAssets/QuickOutline/Samples/Materials/Plane.mat
+  artifactKey: Guid(f58cf65ea995c4b45be95713bdea8134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/QuickOutline/Samples/Materials/Plane.mat using Guid(f58cf65ea995c4b45be95713bdea8134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034b3914a728bb0019600914f904de6b') in 0.023767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ExternalAssets/QuickOutline/Resources/Materials/OutlineFill.mat
+  artifactKey: Guid(311313efa011949e98b6761d652ad13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/QuickOutline/Resources/Materials/OutlineFill.mat using Guid(311313efa011949e98b6761d652ad13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26b081f2604fde4c0fa705835c0b3e7d') in 0.059610 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

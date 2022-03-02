@@ -1955,3 +1955,91 @@ Received Import Request.
   path: Assets/Scripts/Management
   artifactKey: Guid(ead26235b9b51a644873f66ae20ab9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/Management using Guid(ead26235b9b51a644873f66ae20ab9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18368d1f4d5a0c96df1a91f49cb253f4') in 0.011549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 738.742950 seconds.
+  path: Assets/Materials/Textures/arrow.png
+  artifactKey: Guid(2b8b43e2ef054e847bcc52c090253a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Textures/arrow.png using Guid(2b8b43e2ef054e847bcc52c090253a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c68f45caea3775ee3415431bfdc076c') in 0.065871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.172772 seconds.
+  path: Assets/Materials/Textures/arrow.png
+  artifactKey: Guid(2b8b43e2ef054e847bcc52c090253a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Textures/arrow.png using Guid(2b8b43e2ef054e847bcc52c090253a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37f99d43ab48a97f3dc439dabfdd72fb') in 0.011794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.223278 seconds.
+  path: Assets/Materials/Basic
+  artifactKey: Guid(fb64954ab4c6c5a48a460f8739406af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Basic using Guid(fb64954ab4c6c5a48a460f8739406af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b503955a6e14bf00ec726a0ba821c92') in 0.006580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.021040 seconds.
+  path: Assets/Materials/2D
+  artifactKey: Guid(57504f49eee99b44ba0134769d0560d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/2D using Guid(57504f49eee99b44ba0134769d0560d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4615f3efe759efcd5af1f0fb618186da') in 0.006578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.251781 seconds.
+  path: Assets/Materials/2D/New Material.mat
+  artifactKey: Guid(9089efd6729ea8547b8dd22aef15eebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/2D/New Material.mat using Guid(9089efd6729ea8547b8dd22aef15eebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68551b57060cf3fece39cbe3def40c08') in 0.176652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.071738 seconds.
+  path: Assets/Materials/Textures/arrow.png
+  artifactKey: Guid(2b8b43e2ef054e847bcc52c090253a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Textures/arrow.png using Guid(2b8b43e2ef054e847bcc52c090253a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46edfb76d79ee8670c04300fa177569d') in 0.008970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ExternalAssets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4a83e911aeae1e405b23e425518849b') in 0.017901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/ExternalAssets/RPGPP_LT/Textures/rpgpp_lt_tex_a.tga
+  artifactKey: Guid(0bb174f69c9851a48b09bf7d8180c39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/RPGPP_LT/Textures/rpgpp_lt_tex_a.tga using Guid(0bb174f69c9851a48b09bf7d8180c39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cb1f4bd77f443c57d95b5565ddcb737') in 0.019181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ExternalAssets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '209353aae26951a4f3baebeb35897b9b') in 0.046920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ExternalAssets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39262b44b4ee4392a6ba2eb939c787f0') in 0.048790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.916462 seconds.
+  path: Assets/Materials/Colors/Gray.mat
+  artifactKey: Guid(03cbf8cdd14cddc4b95c6b5e90018869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Colors/Gray.mat using Guid(03cbf8cdd14cddc4b95c6b5e90018869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e2cf451c8fdaf0bf81ba8dd9bb43675') in 0.053410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.024553 seconds.
+  path: Assets/Materials/Basic/LaserHit.mat
+  artifactKey: Guid(8e64b1ae101f9234f829ea7f20a5a2ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Basic/LaserHit.mat using Guid(8e64b1ae101f9234f829ea7f20a5a2ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3031c7bacfeda5ede1d02744009deea6') in 0.067830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/io.extendreality.tilia.indicators.spatialtargets.unity/Runtime/SharedResources/Materials/Normal.mat
+  artifactKey: Guid(44d57f528077b604ab33a9e1e6d18d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/io.extendreality.tilia.indicators.spatialtargets.unity/Runtime/SharedResources/Materials/Normal.mat using Guid(44d57f528077b604ab33a9e1e6d18d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b3f7d7db362c49b25a2424501b7fa75') in 0.020669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat
+  artifactKey: Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat using Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10c1f30b1e2a36fca04ac0099ad0e363') in 0.322949 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

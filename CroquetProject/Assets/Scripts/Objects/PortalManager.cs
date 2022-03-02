@@ -15,21 +15,24 @@ public class PortalManager : MonoBehaviour
 
         internal GameObject gameObject;
         internal BallState state;
+        internal int ballIndex;
 
-        internal Ball(GameObject newGameObject)
+        internal Ball(GameObject newGameObject, int newBallIndex)
         {
             gameObject = newGameObject;
             state = BallState.Undetected;
+            ballIndex = newBallIndex;
         }
     }
 
-    internal string ballTag = "Ball";
-    List<Ball> balls;
+    List<Ball> balls = new List<Ball>();
+    public int gateNumber = 1;
+    const bool debugOn = true;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        // TODO: Update visual identifier of this gate's number
     }
 
     // Update is called once per frame
@@ -54,18 +57,26 @@ public class PortalManager : MonoBehaviour
         if (ballIndex == -1) { return; }                // if not a ball: exit
         Ball currentBall = balls[ballIndex];            // Fetch reference
 
+        BallTracker ballTracker = currentBall.gameObject.GetComponent<BallTracker>(); // The next gate the ball is supposed to score
+
         if (position == FramePosition.Front)
         {
             switch (currentBall.state) {
-                case BallState.Undetected:
-                    currentBall.state = BallState.Entering;
+                case BallState.Undetected:  // Ball that is supposed to enter this gate has entered the front
+                    if (ballTracker.nextGate == gateNumber)
+                    {
+                        currentBall.state = BallState.Entering;
+                        if (debugOn) Debug.Log("Ball Entering Correct Gate");
+                    }
                     break;
-                case BallState.Exiting:
+                case BallState.Exiting:     // Ball hasn't been scored but has returned to the center from the back
                     currentBall.state = BallState.Inside;
+                    if (debugOn) Debug.Log("Ball In Center");
                     break;
-                case BallState.Returning:
+                case BallState.Returning:   // Ball has returned to the gate center somehow and the gate is un-scored
                     currentBall.state = BallState.Inside;
-                    // TODO: Deduct score
+                    ballTracker.UnscoreGate();  // Deduct Score
+                    if (debugOn) Debug.Log("Ball Returned to Center; Unscored");
                     break;
             }
         }
@@ -73,11 +84,16 @@ public class PortalManager : MonoBehaviour
         {
             switch (currentBall.state)
             {
-                case BallState.Scored:
-                    currentBall.state = BallState.Returning;
-                    break;
-                case BallState.Entering:
+                case BallState.Scored:      // Ball is supposed to enter the next gate but came back
+                    if (ballTracker.nextGate == gateNumber + 1) 
+                    {
+                        currentBall.state = BallState.Returning;
+                        if (debugOn) Debug.Log("Ball Returning to Previous Gate");
+                    }
+                    break;  
+                case BallState.Entering:    // Ball is now between entrance and exit
                     currentBall.state = BallState.Inside;
+                        if (debugOn) Debug.Log("Ball Exited Front");
                     break;
             }
         }
@@ -89,15 +105,19 @@ public class PortalManager : MonoBehaviour
         if (ballIndex == -1) { return; }                // if not a ball: exit
         Ball currentBall = balls[ballIndex];            // Fetch reference
 
+        BallTracker ballTracker = currentBall.gameObject.GetComponent<BallTracker>(); // The next gate the ball is supposed to score
+
         if (position == FramePosition.Front)
         {
             switch (currentBall.state)
             {
-                case BallState.Entering:
+                case BallState.Entering:    // Ball did not pass through entrance after all and becomes undetected again
                     currentBall.state = BallState.Undetected;
+                    if (debugOn) Debug.Log("Ball Exited Front");
                     break;
-                case BallState.Inside:
+                case BallState.Inside:      // Ball has moved through the center and entered the exit side of the wicket
                     currentBall.state = BallState.Exiting;
+                    if (debugOn) Debug.Log("Ball Proceeding to Exit");
                     break;
             }
         }
@@ -105,15 +125,18 @@ public class PortalManager : MonoBehaviour
         {
             switch (currentBall.state)
             {
-                case BallState.Inside:
+                case BallState.Inside:      // Ball has moved back from the inside and is now in the entrance side of the wicket
                     currentBall.state = BallState.Entering;
+                    if (debugOn) Debug.Log("Ball Retreating to Entrance");
                     break;
-                case BallState.Exiting:
+                case BallState.Exiting:     // Ball has left the exit side of the wicket and a point is scored
                     currentBall.state = BallState.Scored;
-                    // TODO: Score a point
+                    ballTracker.ScoreGate();    // Score a point
+                    if (debugOn) Debug.Log("Ball Scored");
                     break;
-                case BallState.Returning:
+                case BallState.Returning:   // Ball returned but exited again; no score deduction necessary
                     currentBall.state = BallState.Scored;
+                    if (debugOn) Debug.Log("Ball Return Cancelled");
                     break;
             }
         }
@@ -123,19 +146,20 @@ public class PortalManager : MonoBehaviour
     {
 
         // Is it a ball?
-        if (ballRef.CompareTag(ballTag))
+        BallTracker ball = ballRef.GetComponent<BallTracker>();
+        if (ball != null)
         {
             // Search for ball in struct
             for (int i = 0; i < balls.Count; i++)
             {
-                if (balls[i].gameObject == ballRef.gameObject)
+                if (balls[i].ballIndex == ball.ballIndex)
                 {
                     return i;
                 }
             }
 
             // Add the ball to the struct list if missing
-            balls.Add(new Ball(ballRef.gameObject));
+            balls.Add(new Ball(ballRef.gameObject, ball.ballIndex));
             return balls.Count - 1;
         }
         else
