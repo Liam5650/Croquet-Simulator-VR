@@ -37,13 +37,7 @@ public class PortalManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // TODO: Update visual identifier of this gate's number
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        // TODO: Auto Update visual identifier of this gate's number
     }
 
     public enum BallState

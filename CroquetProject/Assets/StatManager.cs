@@ -11,6 +11,7 @@ public class StatManager : MonoBehaviour
 
     int strokes = 0;
     int totalWickets = 0;
+    bool roquetActive = false;
     int[] currentGate = { 1, 1 };   // Two balls
 
     private void Awake()
@@ -52,13 +53,19 @@ public class StatManager : MonoBehaviour
         strokes++;
         textStrokes.text = "Strokes: " + strokes;
         textRoquet.enabled = false;
+        roquetActive = false;
     }
 
     // Eliminate a stroke for hitting a Roquet and celebrate
     internal void RoquetStroke()
     {
-        strokes--;
-        textStrokes.text = "Strokes: " + strokes;
-        textRoquet.enabled = true;
+        // Ignore roquet if already active
+        if (!roquetActive)
+        {
+            strokes--;
+            textStrokes.text = "Strokes: " + strokes;
+            textRoquet.enabled = true;
+            roquetActive = true;
+        }
     }
 }

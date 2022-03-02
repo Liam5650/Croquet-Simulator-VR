@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7902611546641632037}
   - component: {fileID: 2223224334547733614}
   m_Layer: 10
-  m_Name: Object_1
+  m_Name: Stripe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2820927245813034081}
   - component: {fileID: 4869702921151788199}
   m_Layer: 10
-  m_Name: Object_7
+  m_Name: RightCap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 3760235620716027456}
   - component: {fileID: 6248964687879404872}
   m_Layer: 10
-  m_Name: Object_6
+  m_Name: InnerStripe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -197,7 +197,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6745609676285067626}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3760235620716027456
 MeshFilter:
@@ -278,11 +278,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6212314035535683770}
+  - {fileID: 1908639046628654410}
   - {fileID: 5549854256751849119}
   - {fileID: 1081245429446523648}
-  - {fileID: 2621606844254501894}
-  - {fileID: 1908639046628654410}
   - {fileID: 5561778624296787679}
+  - {fileID: 2621606844254501894}
   - {fileID: 1330507521674387789}
   m_Father: {fileID: 5237520587069354309}
   m_RootOrder: 0
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 6485572330034582244}
   - component: {fileID: 7473036242780936108}
   m_Layer: 10
-  m_Name: Object_5
+  m_Name: Stripe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -318,7 +318,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6745609676285067626}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6485572330034582244
 MeshFilter:
@@ -382,7 +382,7 @@ GameObject:
   - component: {fileID: 4964841582239190203}
   - component: {fileID: 3696112017752053983}
   m_Layer: 10
-  m_Name: Object_4
+  m_Name: LeftCap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -401,7 +401,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6745609676285067626}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4964841582239190203
 MeshFilter:
@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 7394942822242180642}
   - component: {fileID: 3621865150739026092}
   m_Layer: 10
-  m_Name: Object_3
+  m_Name: InnerStripe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -484,7 +484,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6745609676285067626}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7394942822242180642
 MeshFilter:
@@ -548,7 +548,7 @@ GameObject:
   - component: {fileID: 6086381777226669675}
   - component: {fileID: 982420276878381451}
   m_Layer: 10
-  m_Name: Object_2
+  m_Name: Stripe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -567,7 +567,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6745609676285067626}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6086381777226669675
 MeshFilter:
@@ -695,3 +695,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9c2066824b92649a2565dfa1af7707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballIndex: 0
+  nextGate: 1
