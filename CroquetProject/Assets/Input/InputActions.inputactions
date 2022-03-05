@@ -780,6 +780,90 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "XR HMD",
+            "id": "15f3885e-a340-432d-8298-11d00ab19d39",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "2bf619dc-9f6a-4690-9e54-7253523dac44",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "24b0dc7d-0b07-4a26-b54c-70d8c5be98e6",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "XR Left Controller",
+            "id": "4b24af86-227f-4f1b-a8cb-3bc9d61c783d",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "6d259954-82fb-4c21-8102-76b6c4c76cb6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "734f72b6-1878-4f90-bf94-364507f723d8",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "XR Right Controller",
+            "id": "052e0c2c-3f1f-481b-b8f4-efa926c49572",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "abe6235c-f818-43e8-9076-cb54152f5606",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8bb01246-a7bc-4077-8845-89b6f8f9decb",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
