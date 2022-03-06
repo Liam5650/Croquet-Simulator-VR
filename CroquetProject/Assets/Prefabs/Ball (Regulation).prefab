@@ -633,7 +633,7 @@ GameObject:
   - component: {fileID: 3245536581143397186}
   m_Layer: 10
   m_Name: Ball (Regulation)
-  m_TagString: Untagged
+  m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

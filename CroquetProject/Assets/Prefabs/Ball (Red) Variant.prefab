@@ -96,6 +96,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball (Red) Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8486409001214867478, guid: 12ecec7138a9a8a4a9212e65dacd5348,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 8486409001214867479, guid: 12ecec7138a9a8a4a9212e65dacd5348,
         type: 3}
       propertyPath: m_Radius
