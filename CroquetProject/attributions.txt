@@ -18,3 +18,9 @@ https://unity3d.com/legal/as_terms
 
 Croquet Models by Tyson Moll 
 (original creation, unlicensed)
+
+----- Texture -----
+
+Stylized Grass 1 PBR Material by FreePBR under Free Non-Commercial license
+https://freepbr.com/materials/stylized-grass1/
+https://freepbr.com/about-free-pbr/

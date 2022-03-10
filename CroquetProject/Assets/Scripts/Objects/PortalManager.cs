@@ -32,7 +32,7 @@ public class PortalManager : MonoBehaviour
 
     List<Ball> balls = new List<Ball>();
     public int gateNumber = 1;
-    const bool debugOn = true;
+    const bool debugOn = false; // enable to display console messages
 
     // Start is called before the first frame update
     void Start()
