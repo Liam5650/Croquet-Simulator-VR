@@ -21,6 +21,19 @@ Croquet Models by Tyson Moll
 
 ----- Texture -----
 
+Seamless Dirty Concrete Wall Texture by Seme Design Lab under Royalty Free License on Texturise
+http://www.texturise.club/2017/01/seamless-dirty-concrete-wall-texture.html
+http://www.texturise.club/p/licence_5.html
+
 Stylized Grass 1 PBR Material by FreePBR under Free Non-Commercial license
 https://freepbr.com/materials/stylized-grass1/
 https://freepbr.com/about-free-pbr/
+
+
+
+
+----- Skybox -----
+
+Skybox Series Free by Avionx under Standard Unity Asset Store EULA 
+https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633
+https://unity3d.com/legal/as_terms
