@@ -21,15 +21,25 @@ Croquet Models by Tyson Moll
 
 ----- Texture -----
 
+Aged Wood Planks PBR Material by FreePBR under Free Non-Commercial license
+https://freepbr.com/materials/aged-wood-planks-pbr-material/
+https://freepbr.com/about-free-pbr/
+
 Seamless Dirty Concrete Wall Texture by Seme Design Lab under Royalty Free License on Texturise
 http://www.texturise.club/2017/01/seamless-dirty-concrete-wall-texture.html
 http://www.texturise.club/p/licence_5.html
+
+Stucco #1 PBR Material by FreePBR under Free Non-Commercial license
+https://freepbr.com/materials/stucco-1/
+https://freepbr.com/about-free-pbr/
 
 Stylized Grass 1 PBR Material by FreePBR under Free Non-Commercial license
 https://freepbr.com/materials/stylized-grass1/
 https://freepbr.com/about-free-pbr/
 
-
+Worn Out Old Brick Wall PBR Material by FreePBR under Free Non-Commercial license
+https://freepbr.com/materials/worn-out-old-brick-wall-pbr-material/
+https://freepbr.com/about-free-pbr/
 
 
 ----- Skybox -----
