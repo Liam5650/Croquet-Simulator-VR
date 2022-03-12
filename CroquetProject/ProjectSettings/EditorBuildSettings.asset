@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 81d836e3847ab6848811f647d39cf04c,
+    com.unity.input.settings: {fileID: 11400000, guid: 800f7226d1299434e9f4c95341185e58,
       type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: acc17f978f0720c419b3fdf2b98c882d,
       type: 2}
