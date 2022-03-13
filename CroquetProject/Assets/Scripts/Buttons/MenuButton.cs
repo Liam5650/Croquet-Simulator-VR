@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MenuButton : MonoBehaviour
+public class MenuButton : ButtonController
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject currentMenu;
+    public GameObject menuToLoad;
 
-    // Update is called once per frame
-    void Update()
+    //Perform button press execution funtion, for this it switches the menu
+    public override void Execute()
     {
-        
+        currentMenu.SetActive(false);
+        menuToLoad.SetActive(true);
     }
 }

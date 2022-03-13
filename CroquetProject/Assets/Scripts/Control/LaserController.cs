@@ -42,9 +42,14 @@ public class LaserController : MonoBehaviour
                 // Set laser end point to hit point
                 laserLine.SetPosition(1, hit.point);
 
-                //If hitting ground, set spawn
+                //If hitting ground, set spawn and unset button if there is one highlighted
                 if (hit.collider.tag == "Ground")
                 {
+                    if (button != null)
+                    {
+                        button.transform.GetChild(1).gameObject.SetActive(false);
+                        button = null;
+                    }
                     spawnPointObject.transform.position = hit.point;
                     spawnPointObject.SetActive(true);
                     spawnPointObject.GetComponent<Renderer>().material.color = Color.blue;
@@ -52,10 +57,34 @@ public class LaserController : MonoBehaviour
                     spawnPoint.position = hit.point;
                     spawnSet = true;
                 }
+                //If we hit a button and not already hitting another, store button reference and highlight
+                else if (hit.collider.tag == "Button" && button == null)
+                {
+                    button = hit.collider.gameObject;
+                    button.transform.GetChild(1).gameObject.SetActive(true);
+                    spawnPointObject.SetActive(false);
+                    laserLine.GetComponent<Renderer>().material.color = Color.green;
+                    spawnSet = false;
+                }
+                //If we hit a button on the prev frame and hit another, unselect old and update reference to new
+                else if (hit.collider.tag == "Button" && button != null)
+                {
+                    button.transform.GetChild(1).gameObject.SetActive(false);
+                    button = hit.collider.gameObject;
+                    button.transform.GetChild(1).gameObject.SetActive(true);
+                    spawnPointObject.SetActive(false);
+                    laserLine.GetComponent<Renderer>().material.color = Color.green;
+                    spawnSet = false;
+                }
 
-                //If hitting something not specified, unset spawn
+                //If hitting something not specified, unset spawn and button
                 else
                 {
+                    if (button != null)
+                    {
+                        button.transform.GetChild(1).gameObject.SetActive(false);
+                        button = null;
+                    }
                     spawnPointObject.SetActive(false);
                     spawnPointObject.GetComponent<Renderer>().material.color = Color.red;
                     laserLine.GetComponent<Renderer>().material.color = Color.red;
@@ -63,9 +92,14 @@ public class LaserController : MonoBehaviour
                 }
             }
 
-            //If no hit, unset spawn and set laser end point forward from origin
+            //If no hit, unset spawn and set laser end point forward from origin, and unset button
             else
             {
+                if (button != null)
+                {
+                    button.transform.GetChild(1).gameObject.SetActive(false);
+                    button = null;
+                }
                 spawnPointObject.SetActive(false);
                 spawnPointObject.GetComponent<Renderer>().material.color = Color.red;
                 laserLine.GetComponent<Renderer>().material.color = Color.red;
@@ -94,6 +128,12 @@ public class LaserController : MonoBehaviour
         {
             TeleportController.instance.StartFade();
             spawnSet = false;
+        }
+        //If the button has been set, execute it
+        else if (button != null)
+        {
+            var buttonScript = button.GetComponent<ButtonController>();
+            buttonScript.Execute();
         }
     }
 }

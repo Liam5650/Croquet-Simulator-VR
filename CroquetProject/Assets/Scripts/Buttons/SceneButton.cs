@@ -15,4 +15,22 @@ public class SceneButton : MonoBehaviour
     {
         
     }
+
+    //Perform button press execution funtion
+    public void execute()
+    {
+        int a = 1;
+    }
+
+    //Enable the highlighting outline of the button
+    public void highlight()
+    {
+        transform.GetChild(1).gameObject.SetActive(true);
+    }
+
+    //Disable the highlighting outline of the button
+    public void unhighlight()
+    {
+        transform.GetChild(1).gameObject.SetActive(false);
+    }
 }
