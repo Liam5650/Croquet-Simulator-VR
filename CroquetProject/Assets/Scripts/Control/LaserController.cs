@@ -13,6 +13,7 @@ public class LaserController : MonoBehaviour
     public Transform spawnPoint; //The spawn point that will be set to move the player to
     public GameObject spawnPointObject; //The circle on the ground indicating to the player where they will spawn
     public bool spawnSet = false; //Indicates if a spawn point has been set for the teleport controller
+    private GameObject button = null; //Reference for a button if the laser hits one
 
     private void Awake()
     {
