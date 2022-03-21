@@ -3391,6 +3391,11 @@ PrefabInstance:
       propertyPath: Deactivated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: LaserController, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 226153709448076848, guid: ad8a824ead173fa46bc93cd200b28920,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 226153710111306081, guid: ad8a824ead173fa46bc93cd200b28920,
         type: 3}
       propertyPath: far clip plane
@@ -3410,6 +3415,21 @@ PrefabInstance:
         type: 3}
       propertyPath: elements.Array.data[1]
       value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2701469906643555096, guid: ad8a824ead173fa46bc93cd200b28920,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2701469906649047914, guid: ad8a824ead173fa46bc93cd200b28920,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2701469907040780580, guid: ad8a824ead173fa46bc93cd200b28920,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5510683535767092901, guid: ad8a824ead173fa46bc93cd200b28920,
         type: 3}

@@ -1,0 +1,45 @@
+{
+    "name": "VRControls",
+    "maps": [
+        {
+            "name": "VRPlayer",
+            "id": "c485fa79-512c-4b2e-8eaf-205066e8c0e4",
+            "actions": [
+                {
+                    "name": "Teleport",
+                    "type": "Button",
+                    "id": "f5225d79-4421-43ef-a2d5-9f9801550d96",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0892fbad-f6f6-4719-9513-60cd567de5c4",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teleport",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f5bf36de-5e83-4b00-b86f-a77f0181a156",
+                    "path": "<XRInputV1::HP::HPReverbG2ControllerOpenXR>{LeftHand}/triggerpressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teleport",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
