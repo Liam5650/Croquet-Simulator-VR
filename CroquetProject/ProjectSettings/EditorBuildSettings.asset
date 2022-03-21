@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/CroquetWorld.unity
+    guid: 1320e97694776d74498dd0bb4cd3591b
+  - enabled: 1
+    path: Assets/Scenes/Level2LoadTest.unity
+    guid: 0e87d5710a51d054b869663d54b7b76e
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 800f7226d1299434e9f4c95341185e58,
       type: 2}

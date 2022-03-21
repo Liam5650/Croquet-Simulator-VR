@@ -1,36 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SceneButton : MonoBehaviour
+public class SceneButton : ButtonController
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string sceneToLoad; //The Scene we would like to load
 
-    // Update is called once per frame
-    void Update()
+    //Perform button press execution funtion, ie load new scene
+    public override void Execute()
     {
-        
-    }
-
-    //Perform button press execution funtion
-    public void execute()
-    {
-        int a = 1;
-    }
-
-    //Enable the highlighting outline of the button
-    public void highlight()
-    {
-        transform.GetChild(1).gameObject.SetActive(true);
-    }
-
-    //Disable the highlighting outline of the button
-    public void unhighlight()
-    {
-        transform.GetChild(1).gameObject.SetActive(false);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
