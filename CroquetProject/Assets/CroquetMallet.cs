@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class CroquetMallet : MonoBehaviour
 {
+    AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -18,6 +20,7 @@ public class CroquetMallet : MonoBehaviour
 
     internal void MalletHit()
     {
+        audioSource.Play();
         StatManager.manager.AddStroke();
     }
 

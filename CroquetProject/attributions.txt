@@ -7,17 +7,14 @@ Liam Iles and Tyson Moll have completed this project in collaboration.
 
 ----- Assets -----
 
-[missing attr. for RPGPP_LT]
-[missing attr. for TextMesh Pro]
-
 Quick Outline by Chris Nolet under Standard Unity Asset Store EULA
 https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488
 https://unity3d.com/legal/as_terms
 
 ----- Models -----
 
-Croquet Models by Tyson Moll 
-(original creation, unlicensed)
+Croquet Models, Furniture Props, Housing, Mountains by Tyson Moll 
+(original creation, copyright of the Author)
 
 ----- Texture -----
 
@@ -41,9 +38,18 @@ Worn Out Old Brick Wall PBR Material by FreePBR under Free Non-Commercial licens
 https://freepbr.com/materials/worn-out-old-brick-wall-pbr-material/
 https://freepbr.com/about-free-pbr/
 
-
 ----- Skybox -----
 
 Skybox Series Free by Avionx under Standard Unity Asset Store EULA 
 https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633
 https://unity3d.com/legal/as_terms
+
+----- Sound -----
+
+Game ball tap by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/ball/
+https://mixkit.co/license/#sfxFree
+
+Light impact on the ground by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/ball/
+https://mixkit.co/license/#sfxFree

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7080060203254683832}
   - component: {fileID: 6778877501294875184}
   - component: {fileID: 410091934207814488}
+  - component: {fileID: 1649453328}
   m_Layer: 10
   m_Name: Mallet
   m_TagString: Pickup
@@ -94,6 +95,102 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.24952438, y: 0.061204694, z: 0.06405606}
   m_Center: {x: -0.00003708899, y: 0.00012419745, z: 0.03173883}
+--- !u!82 &1649453328
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800569303238077205}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f65ce8eade9eee44bb22f0e069c372c3, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.598
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1694157101740061726
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +202,6 @@ GameObject:
   - component: {fileID: 7129381092775655230}
   - component: {fileID: 4584528560948936016}
   - component: {fileID: 7921881491095264059}
-  - component: {fileID: 3235548213574572908}
   m_Layer: 10
   m_Name: rubberGrip
   m_TagString: Untagged
@@ -178,19 +274,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3235548213574572908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1694157101740061726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2eb2be2c2827534794e8fb016053436, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mallet: {fileID: 7080060203254683832}
 --- !u!1 &2602090159811648689
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,7 +368,6 @@ GameObject:
   - component: {fileID: 1130762680927643306}
   - component: {fileID: 4592718460288766470}
   - component: {fileID: 1653625977960035485}
-  - component: {fileID: 5502207190294765064}
   m_Layer: 10
   m_Name: woodShaft
   m_TagString: Untagged
@@ -358,19 +440,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5502207190294765064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4567452831126975583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2eb2be2c2827534794e8fb016053436, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mallet: {fileID: 7080060203254683832}
 --- !u!1 &7954281541648104441
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +451,6 @@ GameObject:
   - component: {fileID: 8682307159443775921}
   - component: {fileID: 4795276948800542274}
   - component: {fileID: 7649258086598505306}
-  - component: {fileID: 3441259320786438634}
   m_Layer: 10
   m_Name: malletHead
   m_TagString: Untagged
@@ -455,19 +523,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3441259320786438634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7954281541648104441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2eb2be2c2827534794e8fb016053436, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mallet: {fileID: 7080060203254683832}
 --- !u!1 &8175531925697876392
 GameObject:
   m_ObjectHideFlags: 0

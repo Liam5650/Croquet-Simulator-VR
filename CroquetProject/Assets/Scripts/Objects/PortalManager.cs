@@ -32,7 +32,6 @@ public class PortalManager : MonoBehaviour
 
     List<Ball> balls = new List<Ball>();
     public int gateNumber = 1;
-    const bool debugOn = false; // enable to display console messages
 
     // Start is called before the first frame update
     void Start()
@@ -64,17 +63,14 @@ public class PortalManager : MonoBehaviour
                     if (ballTracker.nextGate == gateNumber)
                     {
                         balls[ballIndex].ChangeState(BallState.Entering);
-                        if (debugOn) Debug.Log("Ball Entering Correct Gate");
                     }
                     break;
                 case BallState.Exiting:     // Ball hasn't been scored but has returned to the center from the back
                     balls[ballIndex].ChangeState(BallState.Inside);
-                    if (debugOn) Debug.Log("Ball In Center");
                     break;
                 case BallState.Returning:   // Ball has returned to the gate center somehow and the gate is un-scored
                     balls[ballIndex].ChangeState(BallState.Inside);
                     ballTracker.UnscoreGate();  // Deduct Score
-                    if (debugOn) Debug.Log("Ball Returned to Center; Unscored");
                     break;
             }
         }
@@ -86,12 +82,10 @@ public class PortalManager : MonoBehaviour
                     if (ballTracker.nextGate == gateNumber + 1) 
                     {
                         balls[ballIndex].ChangeState(BallState.Returning);
-                        if (debugOn) Debug.Log("Ball Returning to Previous Gate");
                     }
                     break;  
                 case BallState.Entering:    // Ball is now between entrance and exit
                     balls[ballIndex].ChangeState(BallState.Inside);
-                        if (debugOn) Debug.Log("Ball Exited Front");
                     break;
             }
         }
@@ -110,11 +104,9 @@ public class PortalManager : MonoBehaviour
             {
                 case BallState.Entering:    // Ball did not pass through entrance after all and becomes undetected again
                     balls[ballIndex].ChangeState(BallState.Undetected);
-                    if (debugOn) Debug.Log("Ball Exited Front");
                     break;
                 case BallState.Inside:      // Ball has moved through the center and entered the exit side of the wicket
                     balls[ballIndex].ChangeState(BallState.Exiting);
-                    if (debugOn) Debug.Log("Ball Proceeding to Exit");
                     break;
             }
         }
@@ -124,16 +116,13 @@ public class PortalManager : MonoBehaviour
             {
                 case BallState.Inside:      // Ball has moved back from the inside and is now in the entrance side of the wicket
                     balls[ballIndex].ChangeState(BallState.Entering);
-                    if (debugOn) Debug.Log("Ball Retreating to Entrance");
                     break;
                 case BallState.Exiting:     // Ball has left the exit side of the wicket and a point is scored
                     balls[ballIndex].ChangeState(BallState.Scored);
                     ballTracker.ScoreGate();    // Score a point
-                    if (debugOn) Debug.Log("Ball Scored");
                     break;
                 case BallState.Returning:   // Ball returned but exited again; no score deduction necessary
                     balls[ballIndex].ChangeState(BallState.Scored);
-                    if (debugOn) Debug.Log("Ball Return Cancelled");
                     break;
             }
         }
