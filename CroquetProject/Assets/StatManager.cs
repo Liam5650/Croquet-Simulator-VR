@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class StatManager : MonoBehaviour
 {
     // Convenient single instance reference for manager
     public static StatManager manager;
     public TextMeshProUGUI textRedGate, textBlueGate, textStrokes, textRoquet, textTitle;
+    public UnityEvent winAction;
 
     int strokes = 0;
     int totalWickets = 0;
@@ -92,6 +94,8 @@ public class StatManager : MonoBehaviour
 
     internal void TriggerVictory()
     {
+        if (gameComplete) return; // Ignore if game is completed
+
         // Set Game to Complete state
         textTitle.text = "Level Complete!";
         gameComplete = true;
@@ -99,5 +103,8 @@ public class StatManager : MonoBehaviour
         // Hide Roquet
         textRoquet.enabled = false;
         roquetActive = false;
+
+        // Run the win action (if it exists)
+        winAction.Invoke();
     }
 }
