@@ -1,9 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
 
 public class PortalManager : MonoBehaviour
 {
+
+    List<Ball> balls = new List<Ball>();
+    public int gateNumber = 1;
+    public UnityEvent wicketAction;
+    public bool triggerWicketOnce = true;
+    bool wicketActionFlag = false;
 
     public enum FramePosition
     {
@@ -29,9 +37,6 @@ public class PortalManager : MonoBehaviour
             state = newState;
         }
     }
-
-    List<Ball> balls = new List<Ball>();
-    public int gateNumber = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -120,11 +125,22 @@ public class PortalManager : MonoBehaviour
                 case BallState.Exiting:     // Ball has left the exit side of the wicket and a point is scored
                     balls[ballIndex].ChangeState(BallState.Scored);
                     ballTracker.ScoreGate();    // Score a point
+                    TriggerWicketAction();
                     break;
                 case BallState.Returning:   // Ball returned but exited again; no score deduction necessary
                     balls[ballIndex].ChangeState(BallState.Scored);
                     break;
             }
+        }
+    }
+
+    internal void TriggerWicketAction()
+    {
+        // Check if wicket action can be triggered
+        if (!wicketActionFlag || !triggerWicketOnce)
+        {
+            wicketActionFlag = true;
+            wicketAction.Invoke();
         }
     }
 
