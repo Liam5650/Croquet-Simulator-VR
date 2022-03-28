@@ -7,7 +7,7 @@ public class TeleportController : MonoBehaviour
 {
     public static TeleportController instance;
 
-    public Image blackScreen; // UI Image object that is completely black, serves as the fadescreen
+    public Material blackScreen; // UI Image object that is completely black, serves as the fadescreen
     public float fadeSpeed, blackTime; //fadespeed is the speed at which the screen turns to and from black, black time is time spent at black
     private bool fadingTo, fadingBack, waiting; //Bool variables to control where we are in the teleport process
     private float waited = 0f; //Amount of time waited at the blackscreen to allow for loading, is the opposite of blackTime
