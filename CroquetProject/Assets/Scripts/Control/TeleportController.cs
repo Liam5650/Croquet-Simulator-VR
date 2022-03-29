@@ -7,7 +7,6 @@ public class TeleportController : MonoBehaviour
 {
     public static TeleportController instance;
 
-    public Material blackScreen; // UI Image object that is completely black, serves as the fadescreen
     public float fadeSpeed, blackTime; //fadespeed is the speed at which the screen turns to and from black, black time is time spent at black
     private bool fadingTo, fadingBack, waiting; //Bool variables to control where we are in the teleport process
     private float waited = 0f; //Amount of time waited at the blackscreen to allow for loading, is the opposite of blackTime
@@ -26,10 +25,10 @@ public class TeleportController : MonoBehaviour
         {
 
             //Begin by fading the screen to black
-            blackScreen.color = new Color(blackScreen.color.r, blackScreen.color.g, blackScreen.color.b, Mathf.MoveTowards(blackScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
+            BlackScreenController.instance.FadeTo(fadeSpeed);
 
             //If the screen is black, complete the teleport
-            if (blackScreen.color.a == 1f)
+            if (BlackScreenController.instance.GetAlpha() == 1f)
             {
                 fadingTo = false;
                 PlayerController.instance.avatar.position = new Vector3(LaserController.instance.spawnPoint.position.x, PlayerController.instance.avatar.position.y, LaserController.instance.spawnPoint.position.z);
@@ -57,8 +56,8 @@ public class TeleportController : MonoBehaviour
         //Transition the screen from black back to normal
         else if (fadingBack)
         {
-            blackScreen.color = new Color(blackScreen.color.r, blackScreen.color.g, blackScreen.color.b, Mathf.MoveTowards(blackScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
-            if (blackScreen.color.a == 0f)
+            BlackScreenController.instance.FadeFrom(fadeSpeed);
+            if (BlackScreenController.instance.GetAlpha() == 0f)
             {
                 fadingBack = false;
             }

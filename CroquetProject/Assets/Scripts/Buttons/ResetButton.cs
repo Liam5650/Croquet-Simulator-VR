@@ -5,17 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class ResetButton : ButtonController
 {
-    private GameObject currentMenu;
+    private bool waitToLoad = false;
     public string sceneToLoad; //The Scene we would like to load
 
     public override void Execute()
     {
+        BlackScreenController.instance.FadeTo(1f);
+        waitToLoad = true;
+
         PlayerPrefs.DeleteAll();
-
         Debug.Log("Stats Reset");
+    }
 
-        currentMenu = transform.parent.gameObject;
-        currentMenu.SetActive(false);
-        SceneManager.LoadScene(sceneToLoad);
+    private void Update()
+    {
+        if (waitToLoad && BlackScreenController.instance.GetAlpha() == 1f)
+        {
+            Debug.Log("Scene Reset");
+            SceneManager.LoadScene(sceneToLoad);
+        }
     }
 }
