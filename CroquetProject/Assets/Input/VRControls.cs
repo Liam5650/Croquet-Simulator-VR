@@ -35,6 +35,15 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Menu"",
+                    ""type"": ""Button"",
+                    ""id"": ""c3234ed7-5185-42e1-afde-743fe78529f1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -59,6 +68,17 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
                     ""action"": ""Teleport"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2ca05b26-e272-4818-bcc2-c4cc52149b64"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -68,6 +88,7 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
         // VRPlayer
         m_VRPlayer = asset.FindActionMap("VRPlayer", throwIfNotFound: true);
         m_VRPlayer_Teleport = m_VRPlayer.FindAction("Teleport", throwIfNotFound: true);
+        m_VRPlayer_Menu = m_VRPlayer.FindAction("Menu", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -128,11 +149,13 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_VRPlayer;
     private IVRPlayerActions m_VRPlayerActionsCallbackInterface;
     private readonly InputAction m_VRPlayer_Teleport;
+    private readonly InputAction m_VRPlayer_Menu;
     public struct VRPlayerActions
     {
         private @VRControls m_Wrapper;
         public VRPlayerActions(@VRControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Teleport => m_Wrapper.m_VRPlayer_Teleport;
+        public InputAction @Menu => m_Wrapper.m_VRPlayer_Menu;
         public InputActionMap Get() { return m_Wrapper.m_VRPlayer; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -145,6 +168,9 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
                 @Teleport.started -= m_Wrapper.m_VRPlayerActionsCallbackInterface.OnTeleport;
                 @Teleport.performed -= m_Wrapper.m_VRPlayerActionsCallbackInterface.OnTeleport;
                 @Teleport.canceled -= m_Wrapper.m_VRPlayerActionsCallbackInterface.OnTeleport;
+                @Menu.started -= m_Wrapper.m_VRPlayerActionsCallbackInterface.OnMenu;
+                @Menu.performed -= m_Wrapper.m_VRPlayerActionsCallbackInterface.OnMenu;
+                @Menu.canceled -= m_Wrapper.m_VRPlayerActionsCallbackInterface.OnMenu;
             }
             m_Wrapper.m_VRPlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -152,6 +178,9 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
                 @Teleport.started += instance.OnTeleport;
                 @Teleport.performed += instance.OnTeleport;
                 @Teleport.canceled += instance.OnTeleport;
+                @Menu.started += instance.OnMenu;
+                @Menu.performed += instance.OnMenu;
+                @Menu.canceled += instance.OnMenu;
             }
         }
     }
@@ -159,5 +188,6 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
     public interface IVRPlayerActions
     {
         void OnTeleport(InputAction.CallbackContext context);
+        void OnMenu(InputAction.CallbackContext context);
     }
 }

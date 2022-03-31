@@ -133,6 +133,7 @@ public class LaserController : MonoBehaviour
         else if (button != null)
         {
             var buttonScript = button.GetComponent<ButtonController>();
+            button.transform.GetChild(1).gameObject.SetActive(false);
             buttonScript.Execute();
         }
     }

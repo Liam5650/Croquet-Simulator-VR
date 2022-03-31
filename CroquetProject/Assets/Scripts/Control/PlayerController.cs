@@ -49,6 +49,10 @@ public class PlayerController : MonoBehaviour
         {
             LaserController.instance.stopshoot();
         }
+        if(vrControls.VRPlayer.Menu.WasPressedThisFrame() == true)
+        {
+            MenuController.instance.menuButtonPressed();
+        }
     }
 
 }
