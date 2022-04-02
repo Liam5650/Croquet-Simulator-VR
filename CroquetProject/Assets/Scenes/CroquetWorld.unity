@@ -2841,6 +2841,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1129934869}
     m_Modifications:
+    - target: {fileID: 276971163, guid: 147d6624615b4a34e8d5eaa77231f92a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 297162669, guid: 147d6624615b4a34e8d5eaa77231f92a, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -2930,6 +2934,11 @@ PrefabInstance:
       propertyPath: distanceFromPlayer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1229272199141028804, guid: 147d6624615b4a34e8d5eaa77231f92a,
+        type: 3}
+      propertyPath: menuButtonMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 9d813ccf99838af47bc09487f4238b22, type: 2}
     - target: {fileID: 1820326217046640875, guid: 147d6624615b4a34e8d5eaa77231f92a,
         type: 3}
       propertyPath: m_Sprite
@@ -3051,6 +3060,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080730360969735068, guid: 147d6624615b4a34e8d5eaa77231f92a,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 147d6624615b4a34e8d5eaa77231f92a, type: 3}
