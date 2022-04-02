@@ -41,6 +41,7 @@ public class LaserController : MonoBehaviour
             {
                 // Set laser end point to hit point
                 laserLine.SetPosition(1, hit.point);
+                laserLine.enabled = true;
 
                 //If hitting ground, set spawn and unset button if there is one highlighted
                 if (hit.collider.tag == "Ground")
@@ -105,6 +106,7 @@ public class LaserController : MonoBehaviour
                 laserLine.GetComponent<Renderer>().material.color = Color.red;
                 spawnSet = false;
                 laserLine.SetPosition(1, (laserRange * shotPoint.forward) + shotPoint.position);
+                laserLine.enabled = true;
             }
         }
     }
@@ -112,7 +114,6 @@ public class LaserController : MonoBehaviour
     //Fire the laser
     public void shoot()
     {
-        laserLine.enabled = true;
         shooting = true;
     }
 
