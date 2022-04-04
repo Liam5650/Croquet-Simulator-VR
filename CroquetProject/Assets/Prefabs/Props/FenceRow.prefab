@@ -507,6 +507,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8369646725053701683}
+  - component: {fileID: 4435545663143574690}
   m_Layer: 0
   m_Name: FenceRow
   m_TagString: Untagged
@@ -546,6 +547,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4435545663143574690
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2813356976952577481}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1898923, y: 0.12380691, z: 1.2650214}
+  m_Center: {x: -1.0276344, y: 0, z: 0.6409193}
 --- !u!1 &2896875888538578096
 GameObject:
   m_ObjectHideFlags: 0

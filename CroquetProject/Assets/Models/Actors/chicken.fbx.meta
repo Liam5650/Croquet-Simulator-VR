@@ -3,7 +3,32 @@ guid: 36699e345e8a9214bae00c620e1037df
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BirdBod
+    second: {fileID: 2100000, guid: 1819927a70feb1044956e605d9d053e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BirdDark
+    second: {fileID: 2100000, guid: 97f424137562f574995e38f8647b7779, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BirdRed
+    second: {fileID: 2100000, guid: b889de06343a477489c5add71625efda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BirdWhite
+    second: {fileID: 2100000, guid: a5c8d02fcbc0ec54ea614ff1b927ad4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BirdYellow
+    second: {fileID: 2100000, guid: 42d20a6d0fe81aa4b81d6b7e63be8d8c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
