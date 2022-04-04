@@ -9,13 +9,16 @@ public class ChickenAnimator : MonoBehaviour
     public float idleAngle = 30;        // Angle to rotate after idling
     public float lookingTime = 0.25f;
     public float idleBoost = 40;        // Boost force from idle state
-    public float aboutfaceRotateTime = 1.5f;    // Time to rotate 180 degrees after bumping into something
+    public float hopBoost = 40;         // Jump force
+    public float aboutFaceRotateTime = 1.5f;    // Time to rotate 180 degrees after bumping into something
     public float walkTime = 2f;         // Time to spend walking when moving
 
     private float timer = 0f;
     private float initAngle = 0f;
     private float targetAngle = 0f;
     private float rotateTime = 0f;
+
+    private string borderTag = "Border";    // Tag for objects that designate playing border
 
     private Rigidbody rb;
 
@@ -50,7 +53,7 @@ public class ChickenAnimator : MonoBehaviour
 
                     // Setup angles
                     initAngle = transform.rotation.eulerAngles.y;
-                    targetAngle = initAngle + idleAngle;
+                    targetAngle = initAngle + idleAngle * (Random.value * 2 - 1);   // Random within +/- range
                     rotateTime = lookingTime;
                 }
                 break;
@@ -70,7 +73,8 @@ public class ChickenAnimator : MonoBehaviour
                     timer = 0;
 
                     // Add force
-                    rb.AddForce(Vector3.forward * idleBoost);
+                    rb.AddForce(transform.forward * idleBoost);
+                    rb.AddForce(transform.up * hopBoost);
                 }
                 break;
 
@@ -87,13 +91,6 @@ public class ChickenAnimator : MonoBehaviour
                 }
                 break;
         }
-
-        // Walking
-        // wait a period -> cancel contstant forward force, enter idle
-        
-        
-        // Aboutface
-        // rotate 180 over time -> Idle
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -102,8 +99,17 @@ public class ChickenAnimator : MonoBehaviour
 
         if (activeState == State.Walking)
         {
-            // Check other
-            // STUB
+            // If hit a border, turn right around
+            if (collision.gameObject.tag == borderTag)
+            {
+                activeState = State.Looking;
+                timer = 0;
+
+                // Setup angles
+                initAngle = transform.rotation.eulerAngles.y;
+                targetAngle = initAngle + 180;  // Full turn
+                rotateTime = aboutFaceRotateTime;
+            }
         }
     }
 }

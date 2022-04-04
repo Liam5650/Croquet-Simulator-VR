@@ -1352,31 +1352,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 187705661}
     m_Modifications:
-    - target: {fileID: 1140288805970279111, guid: 73732ee4607c819419265293b596630f,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -359840807, guid: e88dc2e109111214cb4833244e0fc8c9,
-        type: 3}
     - target: {fileID: 2039806563695367133, guid: 73732ee4607c819419265293b596630f,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2039806563695367133, guid: 73732ee4607c819419265293b596630f,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2039806563695367133, guid: 73732ee4607c819419265293b596630f,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2039806563695367133, guid: 73732ee4607c819419265293b596630f,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2039806563695367133, guid: 73732ee4607c819419265293b596630f,
         type: 3}
@@ -2040,6 +2019,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: chicken
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385759160850736414, guid: 410f104ed8c4c6049acfaa1dc6085de2,
+        type: 3}
+      propertyPath: idleBoost
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7931755813738800843, guid: 410f104ed8c4c6049acfaa1dc6085de2,
         type: 3}

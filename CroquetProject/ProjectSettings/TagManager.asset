@@ -11,6 +11,7 @@ TagManager:
   - Ground
   - Pickup
   - Button
+  - Border
   layers:
   - Default
   - TransparentFX
