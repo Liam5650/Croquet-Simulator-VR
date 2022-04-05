@@ -35,6 +35,7 @@ public class ChickenAnimator : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        timer = idleWaitTime - Random.value * idleWaitTime; // Random startup
     }
 
     // Update is called once per frame
