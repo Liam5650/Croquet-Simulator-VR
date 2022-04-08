@@ -44,6 +44,24 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PickupLeft"",
+                    ""type"": ""Button"",
+                    ""id"": ""f687e5c3-ec32-4a71-9ee1-3bfed182862a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PickupRight"",
+                    ""type"": ""Button"",
+                    ""id"": ""9aca2f8f-cec3-46e8-b9dc-8295feeab979"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -61,7 +79,7 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""f5bf36de-5e83-4b00-b86f-a77f0181a156"",
-                    ""path"": ""<XRInputV1::HP::HPReverbG2ControllerOpenXR>{LeftHand}/triggerpressed"",
+                    ""path"": ""<XRInputV1::HP::HPReverbG2ControllerOpenXR>{LeftHand}/thumbstickclicked"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -79,6 +97,72 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
                     ""action"": ""Menu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bf6d9f0d-b4c4-4ef6-a332-51ac7c0e121b"",
+                    ""path"": ""<HPMixedRealityController>{RightHand}/menu"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""37601135-4a70-4c71-b196-c96fe1f22c57"",
+                    ""path"": ""<HPMixedRealityController>{LeftHand}/menu"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9effb11e-9dd0-4220-824e-d7000db6dfba"",
+                    ""path"": ""<Keyboard>/o"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PickupLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f0b8fe9a-46a2-4e69-9ed5-5ef38dca6818"",
+                    ""path"": ""<XRInputV1::HP::HPReverbG2ControllerOpenXR>{LeftHand}/triggerpressed"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PickupLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4f4ac746-4094-48a5-9045-d333f2c19a11"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PickupRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e00e1450-4a7a-4c00-b70b-e1394747608f"",
+                    ""path"": ""<XRInputV1::HP::HPReverbG2ControllerOpenXR>{RightHand}/triggerpressed"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PickupRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -89,6 +173,8 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
         m_VRPlayer = asset.FindActionMap("VRPlayer", throwIfNotFound: true);
         m_VRPlayer_Teleport = m_VRPlayer.FindAction("Teleport", throwIfNotFound: true);
         m_VRPlayer_Menu = m_VRPlayer.FindAction("Menu", throwIfNotFound: true);
+        m_VRPlayer_PickupLeft = m_VRPlayer.FindAction("PickupLeft", throwIfNotFound: true);
+        m_VRPlayer_PickupRight = m_VRPlayer.FindAction("PickupRight", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -150,12 +236,16 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
     private IVRPlayerActions m_VRPlayerActionsCallbackInterface;
     private readonly InputAction m_VRPlayer_Teleport;
     private readonly InputAction m_VRPlayer_Menu;
+    private readonly InputAction m_VRPlayer_PickupLeft;
+    private readonly InputAction m_VRPlayer_PickupRight;
     public struct VRPlayerActions
     {
         private @VRControls m_Wrapper;
         public VRPlayerActions(@VRControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Teleport => m_Wrapper.m_VRPlayer_Teleport;
         public InputAction @Menu => m_Wrapper.m_VRPlayer_Menu;
+        public InputAction @PickupLeft => m_Wrapper.m_VRPlayer_PickupLeft;
+        public InputAction @PickupRight => m_Wrapper.m_VRPlayer_PickupRight;
         public InputActionMap Get() { return m_Wrapper.m_VRPlayer; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -171,6 +261,12 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
                 @Menu.started -= m_Wrapper.m_VRPlayerActionsCallbackInterface.OnMenu;
                 @Menu.performed -= m_Wrapper.m_VRPlayerActionsCallbackInterface.OnMenu;
                 @Menu.canceled -= m_Wrapper.m_VRPlayerActionsCallbackInterface.OnMenu;
+                @PickupLeft.started -= m_Wrapper.m_VRPlayerActionsCallbackInterface.OnPickupLeft;
+                @PickupLeft.performed -= m_Wrapper.m_VRPlayerActionsCallbackInterface.OnPickupLeft;
+                @PickupLeft.canceled -= m_Wrapper.m_VRPlayerActionsCallbackInterface.OnPickupLeft;
+                @PickupRight.started -= m_Wrapper.m_VRPlayerActionsCallbackInterface.OnPickupRight;
+                @PickupRight.performed -= m_Wrapper.m_VRPlayerActionsCallbackInterface.OnPickupRight;
+                @PickupRight.canceled -= m_Wrapper.m_VRPlayerActionsCallbackInterface.OnPickupRight;
             }
             m_Wrapper.m_VRPlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -181,6 +277,12 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
                 @Menu.started += instance.OnMenu;
                 @Menu.performed += instance.OnMenu;
                 @Menu.canceled += instance.OnMenu;
+                @PickupLeft.started += instance.OnPickupLeft;
+                @PickupLeft.performed += instance.OnPickupLeft;
+                @PickupLeft.canceled += instance.OnPickupLeft;
+                @PickupRight.started += instance.OnPickupRight;
+                @PickupRight.performed += instance.OnPickupRight;
+                @PickupRight.canceled += instance.OnPickupRight;
             }
         }
     }
@@ -189,5 +291,7 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
     {
         void OnTeleport(InputAction.CallbackContext context);
         void OnMenu(InputAction.CallbackContext context);
+        void OnPickupLeft(InputAction.CallbackContext context);
+        void OnPickupRight(InputAction.CallbackContext context);
     }
 }

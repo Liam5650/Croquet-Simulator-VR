@@ -10,20 +10,23 @@ public class TeleportController : MonoBehaviour
     public float fadeSpeed, blackTime; //fadespeed is the speed at which the screen turns to and from black, black time is time spent at black
     private bool fadingTo, fadingBack, waiting; //Bool variables to control where we are in the teleport process
     private float waited = 0f; //Amount of time waited at the blackscreen to allow for loading, is the opposite of blackTime
-
+    private Vector3 offset;
+    private Vector3 headpos, lastHeadpos;
     private void Awake()
     {
         instance = this;
+        offset = new Vector3(0f, 0f, 0f);
+        lastHeadpos = new Vector3(0f, 0f, 0f);
     }
 
     // Check to see if we have initiated a teleport every frame
     void Update()
     {
+        headpos = PlayerController.instance.headset.transform.localPosition;
 
         //If the start of the teleport process has been started by StartFade(), begin the teleport process
         if (fadingTo)
         {
-
             //Begin by fading the screen to black
             BlackScreenController.instance.FadeTo(fadeSpeed);
 
@@ -31,7 +34,10 @@ public class TeleportController : MonoBehaviour
             if (BlackScreenController.instance.GetAlpha() == 1f)
             {
                 fadingTo = false;
-                PlayerController.instance.avatar.position = new Vector3(LaserController.instance.spawnPoint.position.x, PlayerController.instance.avatar.position.y, LaserController.instance.spawnPoint.position.z);
+
+                offset = new Vector3(headpos.x - lastHeadpos.x, headpos.y, headpos.z - lastHeadpos.z);
+                lastHeadpos = headpos;
+                PlayerController.instance.avatar.position = new Vector3(LaserController.instance.spawnPoint.position.x-offset.x, PlayerController.instance.avatar.position.y, LaserController.instance.spawnPoint.position.z-offset.z);
                 waiting = true;
             }
         }

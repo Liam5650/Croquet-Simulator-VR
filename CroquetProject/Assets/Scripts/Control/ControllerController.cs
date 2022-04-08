@@ -20,6 +20,7 @@ public class ControllerController : MonoBehaviour
     {
         velocity = (transform.position - currentPosition) / Time.deltaTime;
         currentPosition = transform.position;
+       // transform.position = new Vector3 (Mathf.Round(transform.position.x), Mathf.Round(transform.position.y), Mathf.Round(transform.position.z));
     }
 
     //Pick up an object. Check to see if the object has the right tag, pickingUp has been flagged, and if there is no other object attached

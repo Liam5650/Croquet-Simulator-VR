@@ -22,6 +22,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "PickupLeft",
+                    "type": "Button",
+                    "id": "f687e5c3-ec32-4a71-9ee1-3bfed182862a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PickupRight",
+                    "type": "Button",
+                    "id": "9aca2f8f-cec3-46e8-b9dc-8295feeab979",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -39,7 +57,7 @@
                 {
                     "name": "",
                     "id": "f5bf36de-5e83-4b00-b86f-a77f0181a156",
-                    "path": "<XRInputV1::HP::HPReverbG2ControllerOpenXR>{LeftHand}/triggerpressed",
+                    "path": "<XRInputV1::HP::HPReverbG2ControllerOpenXR>{LeftHand}/thumbstickclicked",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -55,6 +73,72 @@
                     "processors": "",
                     "groups": "",
                     "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bf6d9f0d-b4c4-4ef6-a332-51ac7c0e121b",
+                    "path": "<HPMixedRealityController>{RightHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "37601135-4a70-4c71-b196-c96fe1f22c57",
+                    "path": "<HPMixedRealityController>{LeftHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9effb11e-9dd0-4220-824e-d7000db6dfba",
+                    "path": "<Keyboard>/o",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PickupLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f0b8fe9a-46a2-4e69-9ed5-5ef38dca6818",
+                    "path": "<XRInputV1::HP::HPReverbG2ControllerOpenXR>{LeftHand}/triggerpressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PickupLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f4ac746-4094-48a5-9045-d333f2c19a11",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PickupRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e00e1450-4a7a-4c00-b70b-e1394747608f",
+                    "path": "<XRInputV1::HP::HPReverbG2ControllerOpenXR>{RightHand}/triggerpressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PickupRight",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
