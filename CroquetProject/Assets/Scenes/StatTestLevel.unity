@@ -1236,12 +1236,12 @@ PrefabInstance:
     - target: {fileID: 5237520587069354309, guid: 12ecec7138a9a8a4a9212e65dacd5348,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1856
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 5237520587069354309, guid: 12ecec7138a9a8a4a9212e65dacd5348,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.7909
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 5237520587069354309, guid: 12ecec7138a9a8a4a9212e65dacd5348,
         type: 3}
@@ -2318,6 +2318,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball (Red)
       objectReference: {fileID: 0}
+    - target: {fileID: 6093782682990788903, guid: e18f3a0a1a834fa4da057443dd4519cf,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7636933091529934966, guid: e18f3a0a1a834fa4da057443dd4519cf,
         type: 3}
       propertyPath: m_RootOrder
@@ -2326,17 +2331,17 @@ PrefabInstance:
     - target: {fileID: 7636933091529934966, guid: e18f3a0a1a834fa4da057443dd4519cf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.127
+      value: -2.11
       objectReference: {fileID: 0}
     - target: {fileID: 7636933091529934966, guid: e18f3a0a1a834fa4da057443dd4519cf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1394
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7636933091529934966, guid: e18f3a0a1a834fa4da057443dd4519cf,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.6796
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 7636933091529934966, guid: e18f3a0a1a834fa4da057443dd4519cf,
         type: 3}

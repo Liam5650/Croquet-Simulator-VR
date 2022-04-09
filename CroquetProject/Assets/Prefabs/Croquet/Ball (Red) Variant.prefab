@@ -12,6 +12,12 @@ PrefabInstance:
       propertyPath: ballIndex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3245536581143397186, guid: 12ecec7138a9a8a4a9212e65dacd5348,
+        type: 3}
+      propertyPath: scoreEffect
+      value: 
+      objectReference: {fileID: 8515870890920079025, guid: 44bebc27553ff8b4495579b99e89a7f1,
+        type: 3}
     - target: {fileID: 3621865150739026092, guid: 12ecec7138a9a8a4a9212e65dacd5348,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -94,7 +100,7 @@ PrefabInstance:
     - target: {fileID: 8486409001214867478, guid: 12ecec7138a9a8a4a9212e65dacd5348,
         type: 3}
       propertyPath: m_Name
-      value: Ball (Red)
+      value: Ball (Red) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8486409001214867478, guid: 12ecec7138a9a8a4a9212e65dacd5348,
         type: 3}

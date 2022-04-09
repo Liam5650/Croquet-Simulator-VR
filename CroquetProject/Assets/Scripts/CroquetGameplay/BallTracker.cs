@@ -6,6 +6,8 @@ public class BallTracker : MonoBehaviour
 {
     public int ballIndex = 0; // 0 or 1, depending on which ball this is
     public int nextGate = 1;
+    public GameObject scoreEffect;
+    public float effectOffset;
 
     AudioSource audioSource;
 
@@ -18,6 +20,8 @@ public class BallTracker : MonoBehaviour
     {
         nextGate++;
         StatManager.manager.UpdateCurrentGate(ballIndex, nextGate);
+        Instantiate(scoreEffect, new Vector3(transform.position.x, transform.position.y + effectOffset, transform.position.z), transform.rotation);
+        scoreEffect.GetComponent<AudioSource>().Play();
     }
 
     internal void UnscoreGate()
