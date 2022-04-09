@@ -19,6 +19,6 @@ public class ButtonController : MonoBehaviour
     //Perform button press execution funtion
     public virtual void Execute()
     {
-        int a = 1;
+        ;
     }
 }
