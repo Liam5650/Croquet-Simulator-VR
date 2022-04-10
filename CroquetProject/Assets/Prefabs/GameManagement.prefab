@@ -321,6 +321,21 @@ PrefabInstance:
       propertyPath: menuButtonMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 9d813ccf99838af47bc09487f4238b22, type: 2}
+    - target: {fileID: 1317941587527836359, guid: 147d6624615b4a34e8d5eaa77231f92a,
+        type: 3}
+      propertyPath: elements.Array.data[1]
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1317941587863210016, guid: 147d6624615b4a34e8d5eaa77231f92a,
+        type: 3}
+      propertyPath: elements.Array.data[1]
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1317941589143042390, guid: 147d6624615b4a34e8d5eaa77231f92a,
+        type: 3}
+      propertyPath: elements.Array.data[1]
+      value: 0.035
+      objectReference: {fileID: 0}
     - target: {fileID: 1820326217046640875, guid: 147d6624615b4a34e8d5eaa77231f92a,
         type: 3}
       propertyPath: m_Sprite
@@ -443,13 +458,44 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6880312540217342671, guid: 147d6624615b4a34e8d5eaa77231f92a,
+        type: 3}
+      propertyPath: headset
+      value: 
+      objectReference: {fileID: 3184258605767418322}
     - target: {fileID: 7080730360969735068, guid: 147d6624615b4a34e8d5eaa77231f92a,
         type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8885084262610592921, guid: 147d6624615b4a34e8d5eaa77231f92a,
+        type: 3}
+      propertyPath: m_UpdateType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8989395018582577595, guid: 147d6624615b4a34e8d5eaa77231f92a,
+        type: 3}
+      propertyPath: elements.Array.data[1]
+      value: 0.035
+      objectReference: {fileID: 0}
+    - target: {fileID: 8989395019125082666, guid: 147d6624615b4a34e8d5eaa77231f92a,
+        type: 3}
+      propertyPath: elements.Array.data[1]
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 8989395019460731085, guid: 147d6624615b4a34e8d5eaa77231f92a,
+        type: 3}
+      propertyPath: elements.Array.data[1]
+      value: 0.004
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 147d6624615b4a34e8d5eaa77231f92a, type: 3}
+--- !u!1 &3184258605767418322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6706088574626576659, guid: 147d6624615b4a34e8d5eaa77231f92a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8151535475502569665}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5945382989234199985 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2567663148843074928, guid: 147d6624615b4a34e8d5eaa77231f92a,
