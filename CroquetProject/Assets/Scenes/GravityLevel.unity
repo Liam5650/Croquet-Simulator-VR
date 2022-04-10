@@ -1945,11 +1945,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Villa
       objectReference: {fileID: 0}
-    - target: {fileID: 8227711538542152141, guid: f9dfcad5cdca9614ab635a83b5c6ec50,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8309766291657054905, guid: f9dfcad5cdca9614ab635a83b5c6ec50,
         type: 3}
       propertyPath: m_RootOrder
