@@ -2084,6 +2084,12 @@ Transform:
   m_Father: {fileID: 609734585}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1282697649 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3184258605767418322, guid: 72b5dbc0fdd1dfa46a4ccc6c9539b06a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3392257036730781718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1289591154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3115,6 +3121,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3340498426428301838, guid: 72b5dbc0fdd1dfa46a4ccc6c9539b06a,
+        type: 3}
+      propertyPath: headset
+      value: 
+      objectReference: {fileID: 1282697649}
     - target: {fileID: 3392257035678588930, guid: 72b5dbc0fdd1dfa46a4ccc6c9539b06a,
         type: 3}
       propertyPath: m_Name
