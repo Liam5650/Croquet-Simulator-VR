@@ -15,10 +15,28 @@ public class PlayerController : MonoBehaviour
     private VRControls vrControls;
     private bool leftHolding = false, rightHolding = false;
 
+    public GameObject nonVRInput;
+    public MonoBehaviour headsetTracking, leftControllerTracking, rightControllerTracking;
+    public bool ToggleVR;
+
     private void Awake()
     {
         instance = this;
         vrControls = new VRControls();
+        if (ToggleVR)
+        {
+            nonVRInput.SetActive(false);
+            headsetTracking.enabled = true;
+            leftControllerTracking.enabled = true;
+            rightControllerTracking.enabled = true;
+        }
+        else
+        {
+            nonVRInput.SetActive(true);
+            headsetTracking.enabled = false;
+            leftControllerTracking.enabled = false;
+            rightControllerTracking.enabled = false;
+        }
     }
 
     //Enable the VR control scheme
