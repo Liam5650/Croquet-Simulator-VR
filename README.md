@@ -90,12 +90,18 @@ __Other Scripts__
 
 ### Assets Used / Created
 
+----- Packages -----
+
+LowPoly Vegetation Season Pack Lite by PolyMount under Standard Unity Asset Store EULA 
+https://assetstore.unity.com/packages/3d/vegetation/lowpoly-vegetation-season-pack-lite-96083
+https://unity3d.com/legal/as_terms
+
 ----- Models -----
 
 Croquet Models, Furniture Props, Housing, Mountains by Tyson Moll 
 (original creation, copyright of the Author)
 
------ Texture -----
+----- Textures -----
 
 Aged Wood Planks PBR Material by FreePBR under Free Non-Commercial license
 https://freepbr.com/materials/aged-wood-planks-pbr-material/
@@ -123,7 +129,7 @@ Skybox Series Free by Avionx under Standard Unity Asset Store EULA
 https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633
 https://unity3d.com/legal/as_terms
 
------ Sound -----
+----- Sounds -----
 
 Game ball tap by Envato Elements on Mixkit, licensed under Mixkit License
 https://mixkit.co/free-sound-effects/ball/
