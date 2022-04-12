@@ -133,6 +133,29 @@ Light impact on the ground by Envato Elements on Mixkit, licensed under Mixkit L
 https://mixkit.co/free-sound-effects/ball/
 https://mixkit.co/license/#sfxFree
 
+Long pop by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/pop/
+https://mixkit.co/license/#sfxFree
+
+Industrial machine engine hum loop by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/hum/
+https://mixkit.co/license/#sfxFree
+
+Modern technology select by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/click/?page=2
+https://mixkit.co/license/#sfxFree
+
+Retro arcade casino notification by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/click/
+https://mixkit.co/license/#sfxFree
+
+Single classic click by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/click/
+https://mixkit.co/license/#sfxFree
+
+Nature - Essentials by Nox_Sound under Standard Unity Asset Store EULA 
+https://assetstore.unity.com/packages/audio/ambient/nature/nature-essentials-208227
+https://unity3d.com/legal/as_terms
 
 ### Project File Navigation
 
