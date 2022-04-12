@@ -28,6 +28,7 @@ public class ControllerController : MonoBehaviour
     {
         if (other.tag == "Pickup" && pickingUp && gameObject.GetComponent<FixedJoint>() == null)
         {
+            AudioManager.instance.PlaySFX(4);
             gameObject.AddComponent<FixedJoint>();
             gameObject.GetComponent<FixedJoint>().connectedBody = other.gameObject.GetComponent<Rigidbody>();
             gameObject.GetComponent<FixedJoint>().breakForce = breakForce;
@@ -46,6 +47,7 @@ public class ControllerController : MonoBehaviour
         //If we are already holding something, break the joint and match the volocity of the object to that of the controller
         else if (gameObject.GetComponent<FixedJoint>() != null)
         {
+            AudioManager.instance.PlaySFX(4);
             reference = gameObject.GetComponent<FixedJoint>().connectedBody.gameObject;
             Destroy(gameObject.GetComponent<FixedJoint>());
             reference.GetComponent<Rigidbody>().velocity = velocity;

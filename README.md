@@ -159,6 +159,14 @@ Single classic click by Envato Elements on Mixkit, licensed under Mixkit License
 https://mixkit.co/free-sound-effects/click/
 https://mixkit.co/license/#sfxFree
 
+Plastic bubble click by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/click/
+https://mixkit.co/license/#sfxFree
+
+Modern click box check by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/click/
+https://mixkit.co/license/#sfxFree
+
 Nature - Essentials by Nox_Sound under Standard Unity Asset Store EULA 
 https://assetstore.unity.com/packages/audio/ambient/nature/nature-essentials-208227
 https://unity3d.com/legal/as_terms

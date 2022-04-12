@@ -14,6 +14,7 @@ public class LaserController : MonoBehaviour
     public GameObject spawnPointObject; //The circle on the ground indicating to the player where they will spawn
     public bool spawnSet = false; //Indicates if a spawn point has been set for the teleport controller
     private GameObject button = null; //Reference for a button if the laser hits one
+    private bool sfxPlayed = false;
 
     private void Awake()
     {
@@ -46,6 +47,12 @@ public class LaserController : MonoBehaviour
                 //If hitting ground, set spawn and unset button if there is one highlighted
                 if (hit.collider.tag == "Ground")
                 {
+                    if (!sfxPlayed)
+                    {
+                        AudioManager.instance.PlaySFX(3);
+                        sfxPlayed = true;
+                    }
+                    
                     if (button != null)
                     {
                         button.transform.GetChild(1).gameObject.SetActive(false);
@@ -61,8 +68,8 @@ public class LaserController : MonoBehaviour
                 //If we hit a button and not already hitting another, store button reference and highlight
                 else if (hit.collider.tag == "Button" && button == null)
                 {
-                    AudioManager.instance.PlaySFX(1); 
-
+                    AudioManager.instance.PlaySFX(1);
+                    sfxPlayed = true;
                     button = hit.collider.gameObject;
                     button.transform.GetChild(1).gameObject.SetActive(true);
                     spawnPointObject.SetActive(false);
@@ -74,6 +81,7 @@ public class LaserController : MonoBehaviour
                 {
                     if (hit.collider.gameObject != button)
                     {
+                        sfxPlayed = true;
                         AudioManager.instance.PlaySFX(1);
                     }
 
@@ -88,6 +96,11 @@ public class LaserController : MonoBehaviour
                 //If hitting something not specified, unset spawn and button
                 else
                 {
+                    if (!sfxPlayed)
+                    {
+                        AudioManager.instance.PlaySFX(3);
+                        sfxPlayed = true;
+                    }
                     if (button != null)
                     {
                         button.transform.GetChild(1).gameObject.SetActive(false);
@@ -103,6 +116,11 @@ public class LaserController : MonoBehaviour
             //If no hit, unset spawn and set laser end point forward from origin, and unset button
             else
             {
+                if (!sfxPlayed)
+                {
+                    AudioManager.instance.PlaySFX(3);
+                    sfxPlayed = true;
+                }
                 if (button != null)
                 {
                     button.transform.GetChild(1).gameObject.SetActive(false);
@@ -127,6 +145,7 @@ public class LaserController : MonoBehaviour
     //Stop firing the laser
     public void stopshoot()
     {
+        sfxPlayed = false;
         laserLine.enabled = false;
         shooting = false;
         spawnPointObject.SetActive(false);
@@ -134,6 +153,7 @@ public class LaserController : MonoBehaviour
         //If the spawn is set, we call the TeleportController to handle teleporting
         if (spawnSet)
         {
+            AudioManager.instance.PlaySFX(3);
             TeleportController.instance.StartFade();
             spawnSet = false;
         }
@@ -144,6 +164,10 @@ public class LaserController : MonoBehaviour
             button.transform.GetChild(1).gameObject.SetActive(false);
             AudioManager.instance.PlaySFX(2);
             buttonScript.Execute();
+        }
+        else
+        {
+            AudioManager.instance.PlaySFX(3);
         }
     }
 }
