@@ -8,14 +8,20 @@ public class MenuController : MonoBehaviour
     public Transform anchorPoint;
     public float distanceFromPlayer, height;
     private bool isOpened = false;
+
+    AudioSource audioSource;
+
     private void Awake()
     {
         instance = this;
+        audioSource = GetComponent<AudioSource>();
     }
 
 
     public void menuButtonPressed()
     {
+        audioSource.time = 0.3f;
+        audioSource.Play();
         if (isOpened)
         {
             foreach (Transform child in transform)

@@ -61,6 +61,8 @@ public class LaserController : MonoBehaviour
                 //If we hit a button and not already hitting another, store button reference and highlight
                 else if (hit.collider.tag == "Button" && button == null)
                 {
+                    AudioManager.instance.PlaySFX(1); 
+
                     button = hit.collider.gameObject;
                     button.transform.GetChild(1).gameObject.SetActive(true);
                     spawnPointObject.SetActive(false);
@@ -70,6 +72,11 @@ public class LaserController : MonoBehaviour
                 //If we hit a button on the prev frame and hit another, unselect old and update reference to new
                 else if (hit.collider.tag == "Button" && button != null)
                 {
+                    if (hit.collider.gameObject != button)
+                    {
+                        AudioManager.instance.PlaySFX(1);
+                    }
+
                     button.transform.GetChild(1).gameObject.SetActive(false);
                     button = hit.collider.gameObject;
                     button.transform.GetChild(1).gameObject.SetActive(true);
@@ -135,6 +142,7 @@ public class LaserController : MonoBehaviour
         {
             var buttonScript = button.GetComponent<ButtonController>();
             button.transform.GetChild(1).gameObject.SetActive(false);
+            AudioManager.instance.PlaySFX(2);
             buttonScript.Execute();
         }
     }
