@@ -5672,6 +5672,7 @@ Transform:
   - {fileID: 1280606631946135808}
   - {fileID: 7234201118259851503}
   - {fileID: 7996718303679012378}
+  - {fileID: 3277702907536077826}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
@@ -6378,3 +6379,78 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &6104499182132975623
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5050456317811625747}
+    m_Modifications:
+    - target: {fileID: 8776166317028879365, guid: de3718903e11e6548895492b5bf0305f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8776166317028879365, guid: de3718903e11e6548895492b5bf0305f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8776166317028879365, guid: de3718903e11e6548895492b5bf0305f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 8776166317028879365, guid: de3718903e11e6548895492b5bf0305f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8776166317028879365, guid: de3718903e11e6548895492b5bf0305f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8776166317028879365, guid: de3718903e11e6548895492b5bf0305f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8776166317028879365, guid: de3718903e11e6548895492b5bf0305f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8776166317028879365, guid: de3718903e11e6548895492b5bf0305f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8776166317028879365, guid: de3718903e11e6548895492b5bf0305f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8776166317028879365, guid: de3718903e11e6548895492b5bf0305f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8776166317028879365, guid: de3718903e11e6548895492b5bf0305f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8776166317028879371, guid: de3718903e11e6548895492b5bf0305f,
+        type: 3}
+      propertyPath: m_Name
+      value: mixkit-industrial-machine-engine-hum-loop-3178
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de3718903e11e6548895492b5bf0305f, type: 3}
+--- !u!4 &3277702907536077826 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8776166317028879365, guid: de3718903e11e6548895492b5bf0305f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6104499182132975623}
+  m_PrefabAsset: {fileID: 0}
