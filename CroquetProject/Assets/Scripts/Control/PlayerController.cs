@@ -6,23 +6,26 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
+    // PlayerController - handles all player input and directs it to their respective scripts to execute
 
-    public static PlayerController instance;
+    public static PlayerController instance; // We want this class to be accessible from any other script 
 
     public Transform avatar; //Parent object transform for all avatar objects (headset, controllers)
     public GameObject leftController, rightController, headset; //VR Gameobjects
 
-    private VRControls vrControls;
-    private bool leftHolding = false, rightHolding = false;
+    private VRControls vrControls; // Input action object for controls
+    private bool leftHolding = false, rightHolding = false; // Check for if a hand is holding something
 
-    public GameObject nonVRInput;
-    public MonoBehaviour headsetTracking, leftControllerTracking, rightControllerTracking;
-    public bool ToggleVR;
+    public GameObject nonVRInput; // Reference for the non-vr input
+    public MonoBehaviour headsetTracking, leftControllerTracking, rightControllerTracking; // Tracking scripts for VR
+    public bool ToggleVR; // Allows VR to be toggled on or off
 
+    // Set instance and enable/disable functionality based on VR toggle
     private void Awake()
     {
         instance = this;
         vrControls = new VRControls();
+
         if (ToggleVR)
         {
             nonVRInput.SetActive(false);
@@ -61,7 +64,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    // Handle input
     void Update()
     {
         //Teleport Controls
@@ -80,7 +83,7 @@ public class PlayerController : MonoBehaviour
             MenuController.instance.menuButtonPressed();
         }
 
-        //Hand COntrols
+        //Hand Controls
         if (vrControls.VRPlayer.PickupLeft.WasPressedThisFrame() == true)
         {
             leftController.GetComponent<ControllerController>().PickUpOrDrop();
@@ -98,5 +101,4 @@ public class PlayerController : MonoBehaviour
             rightController.GetComponent<ControllerController>().StopPickupOrDrop();
         }
     }
-
 }

@@ -4,20 +4,12 @@ using UnityEngine;
 
 public class ZeroGZone : MonoBehaviour
 {
-    public float force;
-    public Transform direction;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // ZeroGZone - creates an area where forces are applied to rigidbodies
 
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log(direction.forward);
-    }
+    public float force; // The force to place on objects 
+    public Transform direction; // The direction the force is applied
 
+    // If an object goes into the trigger zone, apply the force
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.GetComponent<Rigidbody>() != null)
@@ -25,9 +17,7 @@ public class ZeroGZone : MonoBehaviour
             if(other.tag == "Pickup")
             {
                 other.gameObject.GetComponent<Rigidbody>().AddForce(direction.forward*force);
-            }
-            
+            } 
         }
-
     }
 }

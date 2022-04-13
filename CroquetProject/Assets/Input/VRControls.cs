@@ -89,6 +89,17 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""e96b7824-114d-4f24-88af-4dc7827648b4"",
+                    ""path"": ""<OculusTouchController>{LeftHand}/thumbstickClicked"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Teleport"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""2ca05b26-e272-4818-bcc2-c4cc52149b64"",
                     ""path"": ""<Keyboard>/m"",
                     ""interactions"": """",
@@ -122,6 +133,28 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""872158c0-0aee-4630-b216-a7fd67454b8d"",
+                    ""path"": ""<OculusTouchController>{LeftHand}/primaryButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""453f9e05-db1f-404a-bca3-12b4ac0b5028"",
+                    ""path"": ""<OculusTouchController>{RightHand}/primaryButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""9effb11e-9dd0-4220-824e-d7000db6dfba"",
                     ""path"": ""<Keyboard>/o"",
                     ""interactions"": """",
@@ -144,6 +177,17 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""356e2201-d021-4982-843d-919679d27980"",
+                    ""path"": ""<OculusTouchController>/gripPressed"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PickupLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""4f4ac746-4094-48a5-9045-d333f2c19a11"",
                     ""path"": ""<Keyboard>/p"",
                     ""interactions"": """",
@@ -157,6 +201,17 @@ public partial class @VRControls : IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""e00e1450-4a7a-4c00-b70b-e1394747608f"",
                     ""path"": ""<XRInputV1::HP::HPReverbG2ControllerOpenXR>{RightHand}/triggerpressed"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PickupRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""286cdcad-7bad-4abb-be4b-2ec2c36b941b"",
+                    ""path"": ""<OculusTouchController>{RightHand}/gripPressed"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

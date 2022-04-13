@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class QuitButton : ButtonController
 {
+    // QuitButton - sends an application.quit signal
     public override void Execute()
     {
         Application.Quit();

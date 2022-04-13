@@ -59,6 +59,7 @@ The player is given the ability to physically interact with a variety of objects
 ### Scripts
 
 __Gameplay Management Scripts__
+* AudioManager - class that allows sound effects and level music to be played by other scripts
 * StatManager - level-local stat managements script tracking the current stroke count, the total number of wickets in a course, the progress of the croquet balls, as well as text displays relevant to this information
 * MenuController - handles the menu input action from the PlayerController script. Opens and closes the menu appropriately depending on its current state
 * BlackScreenController - controls the screen fading behavior as used in teleports and level transitions
@@ -87,6 +88,7 @@ __Other Scripts__
 * ChickenAnimator - State machine logic driving chicken behaviors (jumping, turning, object avoidance)
 * ChickenSpawn - simple component function that spawns chickens when requested in a circular area.
 * RotateTime - simple animation: rotates an object over time 
+* ZeroGZone - creates an area where forces are applied to rigidbodies
 
 ### Assets Used / Created
 

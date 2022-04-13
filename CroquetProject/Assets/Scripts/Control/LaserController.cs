@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class LaserController : MonoBehaviour
 {
-    public static LaserController instance;
+    // LaserController - handles laser interactions such as when needed for teleporting or for menu 
+    // button selection. When used for teleporting by hitting the ground, it creates a reference 
+    // intersection point to pass to the TeleportController script. When used for menu selection, 
+    // it stores a reference to the selected button and executes its respective script.
+
+    public static LaserController instance; // We want this class to be accessible from any other script 
 
     private LineRenderer laserLine; //The line to be rendered to indicate the laser
     public Transform shotPoint; //The point at which the laser begins from
@@ -14,8 +19,9 @@ public class LaserController : MonoBehaviour
     public GameObject spawnPointObject; //The circle on the ground indicating to the player where they will spawn
     public bool spawnSet = false; //Indicates if a spawn point has been set for the teleport controller
     private GameObject button = null; //Reference for a button if the laser hits one
-    private bool sfxPlayed = false;
+    private bool sfxPlayed = false; //Check to see if a sfx has already been played by some laser interaction
 
+    // Set Instance
     private void Awake()
     {
         instance = this;
