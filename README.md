@@ -29,7 +29,7 @@ __Players:__
 This package should include an .exe file to open the project. Simply run this file to start the game.
 
 __Evaluators:__
-If this package includes the project files, they can be simply imported as a new project under the Unity Hub using the specified editor version if one wishes to examine or modify the project. All necessary packages and assets will be included by default so no further setup is necessary to start the complete project in Unity. 
+If this package includes the project files, they can be simply imported as a new project under the Unity Hub using the specified editor version if one wishes to examine or modify the project. All necessary packages and assets will be included by default so no further setup is necessary to start the complete project in Unity. If you would like to try a level on keyboard and mouse, a VR toggle has been provided. It can be found in the Unity Hierarchy on the GameManagement-Player-CameraRigs.SpacialSimulator object within its PlayerController script.
 
 ### Game Setup
 
@@ -37,9 +37,17 @@ This package includes input mappings for a variety of vendors, such as Oculus, H
 
 ### Game Control
 
-- Teleport / Menu Navigation - Left Thumbstick
-- Open / Close Menu - Option 2 Button
-- Grasp / Release Object - Grip 1 Button
+VR:
+Teleport / Menu Navigation - Left Thumbstick
+Open / Close Menu - Option 2 Button
+Grasp / Release Object - Grip 1 Button
+
+Keyboard & Mouse:
+Teleport / Menu Navigation - “L” or middle mouse button
+Open / Close Menu - “M”
+Grasp / Release Object - Left and right mouse button for each respective hand
+Move - “WASD”
+
 
 #### World Navigation
 
@@ -186,18 +194,11 @@ Tutorial billboards are located in some levels to provide instructions on how to
 ### Further Development
 
 To extend the project, we would like to consider adding the following:
-- Background music for the main levels
-- Goal celebration (confetti pop etc)
 - Statistics tracking (to record records)
 - curved laser
 - SHIFT testing
 - adjustment of teleportation graphic
-- additional SFX
 - shader(s)
 - mallet collision improvements
 - stroke cooldown timer to prevent double hits
 - stroke distance check to allow accidental, mm-long taps
-- ramp adjustments for ease-of-use
-- hoops shouldn’t move
-- teleport accuracy
-- Increase size of rectangle wickets
