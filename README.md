@@ -98,7 +98,7 @@ https://unity3d.com/legal/as_terms
 
 ----- Models -----
 
-Croquet Models, Furniture Props, Housing, Mountains by Tyson Moll 
+Croquet Models, Car, Lamppost, Billboards, Furniture Props, Housing, Mountains by Tyson Moll 
 (original creation, copyright of the Author)
 
 ----- Textures -----
