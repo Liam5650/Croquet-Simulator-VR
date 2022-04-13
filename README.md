@@ -47,7 +47,7 @@ Teleport / Menu Navigation - “L” or middle mouse button
 Open / Close Menu - “M”
 Grasp / Release Object - Left and right mouse button for each respective hand
 Move - “WASD”
-
+Player VR Object Control (Head, Hands) - "1" gives player control, "2" left hand, "3" right hand, "4" reset player position, "5" reset hand positions
 
 #### World Navigation
 
