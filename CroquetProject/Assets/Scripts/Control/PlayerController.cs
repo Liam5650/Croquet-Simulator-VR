@@ -29,6 +29,11 @@ public class PlayerController : MonoBehaviour
             headsetTracking.enabled = true;
             leftControllerTracking.enabled = true;
             rightControllerTracking.enabled = true;
+            avatar.position = new Vector3(avatar.position.x, 0f, avatar.position.z);
+            if(PlayerPrefs.HasKey("Offset"))
+            {
+                avatar.position = new Vector3(avatar.position.x, avatar.position.y + PlayerPrefs.GetFloat("Offset"), avatar.position.z);
+            }
         }
         else
         {

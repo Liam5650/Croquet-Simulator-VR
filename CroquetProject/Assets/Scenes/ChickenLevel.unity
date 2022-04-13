@@ -3541,6 +3541,11 @@ PrefabInstance:
       propertyPath: headset
       value: 
       objectReference: {fileID: 1282697649}
+    - target: {fileID: 3340498426428301838, guid: 72b5dbc0fdd1dfa46a4ccc6c9539b06a,
+        type: 3}
+      propertyPath: ToggleVR
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3392257035678588930, guid: 72b5dbc0fdd1dfa46a4ccc6c9539b06a,
         type: 3}
       propertyPath: m_Name

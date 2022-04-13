@@ -11,5 +11,14 @@ public class ModifierButton : ButtonController
     public override void Execute()
     {
         modObject.transform.position = modObject.transform.position + new Vector3(0f, modAmount, 0f);
+        if(PlayerPrefs.HasKey("Offset"))
+        {
+            float oldOffset = PlayerPrefs.GetFloat("Offset");
+            PlayerPrefs.SetFloat("Offset", oldOffset + modAmount);
+        }
+        else
+        {
+            PlayerPrefs.SetFloat("Offset", modAmount);
+        }  
     }
 }
