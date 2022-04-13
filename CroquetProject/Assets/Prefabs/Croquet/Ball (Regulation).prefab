@@ -632,6 +632,7 @@ GameObject:
   - component: {fileID: 8486409001214867479}
   - component: {fileID: 3245536581143397186}
   - component: {fileID: 1519381771}
+  - component: {fileID: 4446511307936622777}
   m_Layer: 10
   m_Name: Ball (Regulation)
   m_TagString: Pickup
@@ -797,3 +798,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4446511307936622777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8486409001214867478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77282eb41056a3447b794964e51f3fec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  catchDistance: 2

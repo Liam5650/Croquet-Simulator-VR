@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6778877501294875184}
   - component: {fileID: 410091934207814488}
   - component: {fileID: 1649453328}
+  - component: {fileID: 7880650194572412338}
   m_Layer: 10
   m_Name: Mallet
   m_TagString: Pickup
@@ -191,6 +192,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7880650194572412338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800569303238077205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77282eb41056a3447b794964e51f3fec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  catchDistance: 10
 --- !u!1 &1694157101740061726
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ControllerController : MonoBehaviour
 {
     private bool pickingUp = false; //Indicates if the player has initiated picking something up
-    private GameObject reference; //Reference to the picked up gameobject
+    private GameObject grabbedObject = null; //Reference to the picked up gameobject
     private Vector3 currentPosition, velocity; //Used to calculated the velocity of the object to maintain after joint break
     public float breakForce; //Breakforce of the joint between the controller and picked up object
 
@@ -26,12 +26,18 @@ public class ControllerController : MonoBehaviour
     //Pick up an object. Check to see if the object has the right tag, pickingUp has been flagged, and if there is no other object attached
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Pickup" && pickingUp && gameObject.GetComponent<FixedJoint>() == null)
+        if (other.tag == "Pickup" && pickingUp && grabbedObject == null)
         {
             AudioManager.instance.PlaySFX(4);
-            gameObject.AddComponent<FixedJoint>();
-            gameObject.GetComponent<FixedJoint>().connectedBody = other.gameObject.GetComponent<Rigidbody>();
-            gameObject.GetComponent<FixedJoint>().breakForce = breakForce;
+            
+            Rigidbody rbOther = other.GetComponent<Rigidbody>();
+            if (rbOther != null)
+            {
+                gameObject.AddComponent<FixedJoint>();
+                grabbedObject = rbOther.gameObject;
+                gameObject.GetComponent<FixedJoint>().connectedBody = rbOther;
+                gameObject.GetComponent<FixedJoint>().breakForce = breakForce;
+            }
         }
     }
 
@@ -39,19 +45,18 @@ public class ControllerController : MonoBehaviour
     public void PickUpOrDrop()
     {
         //If we arent already holding something, we can pick up
-        if (gameObject.GetComponent<FixedJoint>() == null)
+        if (grabbedObject == null)
         {
             pickingUp = true;
         }
 
         //If we are already holding something, break the joint and match the volocity of the object to that of the controller
-        else if (gameObject.GetComponent<FixedJoint>() != null)
+        else if (grabbedObject != null && !pickingUp)
         {
             AudioManager.instance.PlaySFX(4);
-            reference = gameObject.GetComponent<FixedJoint>().connectedBody.gameObject;
             Destroy(gameObject.GetComponent<FixedJoint>());
-            reference.GetComponent<Rigidbody>().velocity = velocity;
-            reference = null;
+            grabbedObject.GetComponentInParent<Rigidbody>().velocity = velocity;
+            grabbedObject = null;
         }
     }
 
