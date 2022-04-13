@@ -33,7 +33,7 @@ If this package includes the project files, they can be simply imported as a new
 
 ### Game Setup
 
-This package includes input mappings for a variety of vendors, such as Oculus, HTC, and other mixed reality kits. To start the game with correct mappings, the user must ensure that their VR kit is turned on and recognized by their computer before opening the game executable. The game will then open to the first level and the user should be able to move freely and see their controllers represented as objects within the gameworld. 
+This package includes input mappings for a variety of vendors, such as Oculus, HTC, and other mixed reality kits. To start the game with correct mappings, the user must ensure that their VR kit is turned on and recognized by their computer before opening the game executable. The game will then open to the first level and the user should be able to move freely and see their controllers represented as objects within the gameworld. Should further input mappings be required, the Input Action Asset can be found under Project-Assets-Input-VRControls. 
 
 ### Game Control
 
