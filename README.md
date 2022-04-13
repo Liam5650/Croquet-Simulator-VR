@@ -37,7 +37,7 @@ This package includes input mappings for a variety of vendors, such as Oculus, H
 
 ### Game Control
 
-VR:
+#### VR:
 
 Teleport / Menu Navigation - Left Thumbstick
 
@@ -46,7 +46,7 @@ Open / Close Menu - Option 2 Button
 Grasp / Release Object - Grip 1 Button
 
 
-Keyboard & Mouse:
+#### Keyboard & Mouse:
 
 Teleport / Menu Navigation - “L” or middle mouse button
 
