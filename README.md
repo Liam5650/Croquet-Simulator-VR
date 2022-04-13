@@ -45,6 +45,7 @@ Open / Close Menu - Option 2 Button
 
 Grasp / Release Object - Grip 1 Button
 
+
 Keyboard & Mouse:
 
 Teleport / Menu Navigation - “L” or middle mouse button
