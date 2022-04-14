@@ -12,10 +12,9 @@ _A perfectly normal simulation of everyone's favourite lawn sport!_
 
 Croquet Simulator VR is an exciting new way to experience golf croquet from the comfort of your home. Our game takes place in Croquette, a dainty little English village nestled deep in the Mallet mountains full of citizens who love nothing more than a good round of lawn sports. To play croquet, simply knock both blue and red croquet balls through the designated wickets on each course to complete each level. Strategically roquet your croquet balls by knocking them together to reduce your stroke count along the way. As with any perfect simulation, Croquet Simulator VR is not without its unexpected lifelike hazards: beware feral chickens and gravity wells as you line up your perfect shot down the pitch.
 
-https://www.youtube.com/watch?v=A6HxzAtnkiI
+https://www.youtube.com/watch?v=jzffNAjOqHk
 
 https://vultures.itch.io/croquet-simulator
-Access is restricted; use password ‘roquet_chicken’
 
 
 ## User Manual
