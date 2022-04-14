@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class ResetButton : ButtonController
 {
-    private bool waitToLoad = false;
+    // ResetButton - Resets the scene and all player stats
+
+    private bool waitToLoad = false; // Reference for wether we have waited for other processes to finish before reseting
     public string sceneToLoad; //The Scene we would like to load
 
+    // Start the fade, reset prefs
     public override void Execute()
     {
         BlackScreenController.instance.FadeTo(1f);
@@ -17,6 +20,7 @@ public class ResetButton : ButtonController
         Debug.Log("Stats Reset");
     }
 
+    // Wait for the screen to be black, then reload the scene
     private void Update()
     {
         if (waitToLoad && BlackScreenController.instance.GetAlpha() == 1f)

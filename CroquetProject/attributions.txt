@@ -1,22 +1,19 @@
 Liam Iles and Tyson Moll have completed this project in collaboration.
 
-//	Textures by Poly Haven Staff licenced under CC0
-//	https://polyhaven.com/textures
-//	https://polyhaven.com/license
+### Assets Used / Created
 
+----- Packages -----
 
------ Assets -----
-
-Quick Outline by Chris Nolet under Standard Unity Asset Store EULA
-https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488
+LowPoly Vegetation Season Pack Lite by PolyMount under Standard Unity Asset Store EULA 
+https://assetstore.unity.com/packages/3d/vegetation/lowpoly-vegetation-season-pack-lite-96083
 https://unity3d.com/legal/as_terms
 
 ----- Models -----
 
-Croquet Models, Furniture Props, Housing, Mountains by Tyson Moll 
+Croquet Models, Car, Lamppost, Billboards, Furniture Props, Housing, Mountains by Tyson Moll 
 (original creation, copyright of the Author)
 
------ Texture -----
+----- Textures -----
 
 Aged Wood Planks PBR Material by FreePBR under Free Non-Commercial license
 https://freepbr.com/materials/aged-wood-planks-pbr-material/
@@ -44,7 +41,7 @@ Skybox Series Free by Avionx under Standard Unity Asset Store EULA
 https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633
 https://unity3d.com/legal/as_terms
 
------ Sound -----
+----- Sounds -----
 
 Game ball tap by Envato Elements on Mixkit, licensed under Mixkit License
 https://mixkit.co/free-sound-effects/ball/
@@ -53,3 +50,35 @@ https://mixkit.co/license/#sfxFree
 Light impact on the ground by Envato Elements on Mixkit, licensed under Mixkit License
 https://mixkit.co/free-sound-effects/ball/
 https://mixkit.co/license/#sfxFree
+
+Long pop by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/pop/
+https://mixkit.co/license/#sfxFree
+
+Industrial machine engine hum loop by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/hum/
+https://mixkit.co/license/#sfxFree
+
+Modern technology select by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/click/?page=2
+https://mixkit.co/license/#sfxFree
+
+Retro arcade casino notification by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/click/
+https://mixkit.co/license/#sfxFree
+
+Single classic click by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/click/
+https://mixkit.co/license/#sfxFree
+
+Plastic bubble click by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/click/
+https://mixkit.co/license/#sfxFree
+
+Modern click box check by Envato Elements on Mixkit, licensed under Mixkit License
+https://mixkit.co/free-sound-effects/click/
+https://mixkit.co/license/#sfxFree
+
+Nature - Essentials by Nox_Sound under Standard Unity Asset Store EULA 
+https://assetstore.unity.com/packages/audio/ambient/nature/nature-essentials-208227
+https://unity3d.com/legal/as_terms

@@ -29,17 +29,34 @@ __Players:__
 This package should include an .exe file to open the project. Simply run this file to start the game.
 
 __Evaluators:__
-If this package includes the project files, they can be simply imported as a new project under the Unity Hub using the specified editor version if one wishes to examine or modify the project. All necessary packages and assets will be included by default so no further setup is necessary to start the complete project in Unity. 
+If this package includes the project files, they can be simply imported as a new project under the Unity Hub using the specified editor version if one wishes to examine or modify the project. All necessary packages and assets will be included by default so no further setup is necessary to start the complete project in Unity. If you would like to try a level on keyboard and mouse, a VR toggle has been provided. It can be found in the Unity Hierarchy on the GameManagement-Player-CameraRigs.SpacialSimulator object within its PlayerController script.
 
 ### Game Setup
 
-This package includes input mappings for a variety of vendors, such as Oculus, HTC, and other mixed reality kits. To start the game with correct mappings, the user must ensure that their VR kit is turned on and recognized by their computer before opening the game executable. The game will then open to the first level and the user should be able to move freely and see their controllers represented as objects within the gameworld. 
+This package includes input mappings for a variety of vendors, such as Oculus, HTC, and other mixed reality kits. To start the game with correct mappings, the user must ensure that their VR kit is turned on and recognized by their computer before opening the game executable. The game will then open to the first level and the user should be able to move freely and see their controllers represented as objects within the gameworld. Should further input mappings be required, the Input Action Asset can be found under Project-Assets-Input-VRControls. 
 
 ### Game Control
 
-- Teleport / Menu Navigation - Left Thumbstick
-- Open / Close Menu - Option 2 Button
-- Grasp / Release Object - Grip 1 Button
+#### VR:
+
+Teleport / Menu Navigation - Left Thumbstick
+
+Open / Close Menu - Option 2 Button
+
+Grasp / Release Object - Grip 1 Button
+
+
+#### Keyboard & Mouse:
+
+Teleport / Menu Navigation - “L” or middle mouse button
+
+Open / Close Menu - “M”
+
+Grasp / Release Object - Left and right mouse button for each respective hand
+
+Move - “WASD”
+
+Player VR Object Control (Head, Hands) - "1" gives player control, "2" left hand, "3" right hand, "4" reset player position, "5" reset hand positions
 
 #### World Navigation
 
@@ -59,6 +76,7 @@ The player is given the ability to physically interact with a variety of objects
 ### Scripts
 
 __Gameplay Management Scripts__
+* AudioManager - class that allows sound effects and level music to be played by other scripts
 * StatManager - level-local stat managements script tracking the current stroke count, the total number of wickets in a course, the progress of the croquet balls, as well as text displays relevant to this information
 * MenuController - handles the menu input action from the PlayerController script. Opens and closes the menu appropriately depending on its current state
 * BlackScreenController - controls the screen fading behavior as used in teleports and level transitions
@@ -87,6 +105,7 @@ __Other Scripts__
 * ChickenAnimator - State machine logic driving chicken behaviors (jumping, turning, object avoidance)
 * ChickenSpawn - simple component function that spawns chickens when requested in a circular area.
 * RotateTime - simple animation: rotates an object over time 
+* ZeroGZone - creates an area where forces are applied to rigidbodies
 
 ### Assets Used / Created
 
@@ -184,18 +203,11 @@ Tutorial billboards are located in some levels to provide instructions on how to
 ### Further Development
 
 To extend the project, we would like to consider adding the following:
-- Background music for the main levels
-- Goal celebration (confetti pop etc)
 - Statistics tracking (to record records)
 - curved laser
 - SHIFT testing
 - adjustment of teleportation graphic
-- additional SFX
 - shader(s)
 - mallet collision improvements
 - stroke cooldown timer to prevent double hits
 - stroke distance check to allow accidental, mm-long taps
-- ramp adjustments for ease-of-use
-- hoops shouldn’t move
-- teleport accuracy
-- Increase size of rectangle wickets
