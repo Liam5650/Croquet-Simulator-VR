@@ -504,8 +504,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chicken: {fileID: 7302746568325217393, guid: 410f104ed8c4c6049acfaa1dc6085de2, type: 3}
-  spawnDistanceOffset: 5
-  num: 6
+  spawnDistanceOffset: 5.5
+  num: 8
   test: 0
 --- !u!4 &170244195 stripped
 Transform:
