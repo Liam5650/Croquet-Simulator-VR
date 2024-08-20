@@ -1,6 +1,6 @@
 # Croquet Simulator VR
 
-![Screenshot of Game](https://imgur.com/nHr9O1W.png)
+![Screenshot of Game](https://github.com/Liam5650/Croquet-Simulator-VR/blob/main/CoverImage.jpg)
 
 _last modified 2022-04-12_
 
